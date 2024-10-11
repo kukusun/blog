@@ -88,6 +88,55 @@
     
     
     <article
+  id="post-50-为微软拼音添加时间输出"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/blog/posts/ca9b5ae.html"
+    >50.为微软拼音添加时间输出</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/blog/posts/ca9b5ae.html" class="article-date">
+  <time datetime="2023-03-11T07:09:08.000Z" itemprop="datePublished">2023-03-11</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>为微软拼音添加自定义短语,格式也可以自己替换，下面只展示两种自用的</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">%yyyy%-%MM%-%dd% %HH%:%mm%:%ss%</span><br><span class="line">%yyyy%年%MM%月%dd%日 %HH%时%mm%分%ss%秒</span><br></pre></td></tr></table></figure> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
   id="post-49-Win10时钟显示秒"
   class="article article-type-post"
   itemscope
@@ -321,62 +370,6 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reg delete &quot;HKEY_CLASSES_ROOT\DesktopBackground\shell\SwitchPowerPlan&quot; /f &amp; reg add &quot;HKEY_CLASSES_ROOT\DesktopBackground\shell\SwitchPowerPlan&quot; /v Icon /t REG_SZ /d powercpl.dll /f &amp; reg add &quot;HKEY_CLASSES_ROOT\DesktopBackground\shell\SwitchPowerPlan&quot; /v MUIVerb /t REG_SZ /d 切换电源计划 /f &amp; reg add &quot;HKEY_CLASSES_ROOT\DesktopBackground\shell\SwitchPowerPlan&quot; /v Position /t REG_SZ /d Bottom /f &amp; reg add &quot;HKEY_CLASSES_ROOT\DesktopBackground\shell\SwitchPowerPlan&quot; /v SubCommands /t REG_SZ /d &quot;&quot; /f &amp; reg add &quot;HKEY_CLASSES_ROOT\DesktopBackground\shell\SwitchPowerPlan\Shell\01menu&quot; /v Icon /t REG_SZ /d powercpl.dll /f &amp; reg add &quot;HKEY_CLASSES_ROOT\DesktopBackground\shell\SwitchPowerPlan\Shell\01menu&quot; /v MUIVerb /t REG_SZ /d 节能 /f &amp; reg add &quot;HKEY_CLASSES_ROOT\DesktopBackground\shell\SwitchPowerPlan\Shell\01menu\Command&quot; /ve /t REG_SZ /d &quot;powercfg /setactive a1841308-3541-4fab-bc81-f71556f20b4a&quot; /f &amp; reg add &quot;HKEY_CLASSES_ROOT\DesktopBackground\shell\SwitchPowerPlan\Shell\02menu&quot; /v Icon /t REG_SZ /d powercpl.dll /f &amp; reg add &quot;HKEY_CLASSES_ROOT\DesktopBackground\shell\SwitchPowerPlan\Shell\02menu&quot; /v MUIVerb /t REG_SZ /d 平衡 /f &amp; reg add &quot;HKEY_CLASSES_ROOT\DesktopBackground\shell\SwitchPowerPlan\Shell\02menu\Command&quot; /ve /t REG_SZ /d &quot;powercfg /setactive 381b4222-f694-41f0-9685-ff5bb260df2e&quot; /f &amp; reg add &quot;HKEY_CLASSES_ROOT\DesktopBackground\shell\SwitchPowerPlan\Shell\03menu&quot; /v Icon /t REG_SZ /d powercpl.dll /f &amp; reg add &quot;HKEY_CLASSES_ROOT\DesktopBackground\shell\SwitchPowerPlan\Shell\03menu&quot; /v MUIVerb /t REG_SZ /d 高性能 /f &amp; reg add &quot;HKEY_CLASSES_ROOT\DesktopBackground\shell\SwitchPowerPlan\Shell\03menu\Command&quot; /ve /t REG_SZ /d &quot;powercfg /setactive 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c&quot; /f &amp; reg add &quot;HKEY_CLASSES_ROOT\DesktopBackground\shell\SwitchPowerPlan\Shell\04menu&quot; /v Icon /t REG_SZ /d powercpl.dll /f &amp; reg add &quot;HKEY_CLASSES_ROOT\DesktopBackground\shell\SwitchPowerPlan\Shell\04menu&quot; /v MUIVerb /t REG_SZ /d 卓越性能 /f &amp; reg add &quot;HKEY_CLASSES_ROOT\DesktopBackground\shell\SwitchPowerPlan\Shell\04menu\Command&quot; /ve /t REG_SZ /d &quot;powercfg /setactive e9a42b02-d5df-448d-aa00-03f14749eb61&quot; /f</span><br></pre></td></tr></table></figure>
 <p>删除命令：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reg delete &quot;HKEY_CLASSES_ROOT\DesktopBackground\shell\SwitchPowerPlan&quot; /f</span><br></pre></td></tr></table></figure> 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
-    <article
-  id="post-44-更改网络为公用或专用"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/blog/posts/d05cfb3e.html"
-    >44.更改网络为公用或专用</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/blog/posts/d05cfb3e.html" class="article-date">
-  <time datetime="2023-03-10T08:43:33.000Z" itemprop="datePublished">2023-03-10</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h3 id="方法一：用PowerShell命令的方式修改-比较安全，仅限于当前连接的网络"><a href="#方法一：用PowerShell命令的方式修改-比较安全，仅限于当前连接的网络" class="headerlink" title="方法一：用PowerShell命令的方式修改(比较安全，仅限于当前连接的网络)"></a>方法一：用PowerShell命令的方式修改(比较安全，仅限于当前连接的网络)</h3><p>获取网络连接信息</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Get-NetConnectionProfile</span><br></pre></td></tr></table></figure>
-<p>设置为专用</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Set-NetConnectionProfile -Name 网络 -NetworkCategory Private</span><br></pre></td></tr></table></figure>
-<p>设置为公用</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Set-NetConnectionProfile -Name 网络 -NetworkCategory Public</span><br></pre></td></tr></table></figure>
-<p>命令组合修改</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$Name = Get-NetConnectionProfile;Set-NetConnectionProfile -Name $Name.Name -NetworkCategory Private</span><br></pre></td></tr></table></figure>
-<h3 id="方法二：修改注册表（暂时等之后再总结）"><a href="#方法二：修改注册表（暂时等之后再总结）" class="headerlink" title="方法二：修改注册表（暂时等之后再总结）"></a>方法二：修改注册表（暂时等之后再总结）</h3> 
       <!-- reward -->
       
     </div>
