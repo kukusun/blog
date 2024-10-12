@@ -78,7 +78,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">70</span>
+            <span class="post-count">404</span>
         </span>
     </span>
 
@@ -94,14 +94,21 @@
  
     </div>
       
+    <div class="tocbot"></div>
+
 
 
 
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p>因将hexo博客移至子目录下，发现的一些问题的解决经验记录<br>还有一些问题没验证，验证后再写</p>
-<p>先临时放个我个人对hexo-asset-image插件修改的记录在这里<br><a target="_blank" rel="noopener" href="https://github.com/kukusun/hexo-asset-image-fix/commit/21f102794ceb8bb1e1d142d5d916310ef6a36904">https://github.com/kukusun/hexo-asset-image-fix/commit/21f102794ceb8bb1e1d142d5d916310ef6a36904</a></p>
+  <h3 id="1-hexo配置文件"><a href="#1-hexo配置文件" class="headerlink" title="1.hexo配置文件"></a>1.hexo配置文件</h3><p>如果url设置为<code>https://username.github.io</code>，那么root可以不要。<br>如果url设置为子目录，那么要加入root并将值设置为子目录。<br>例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">不在子目录的例子</span><br><span class="line"># URL</span><br><span class="line">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span><br><span class="line">url: https://username.github.io/blog</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">在一级子目录的例子</span><br><span class="line"># URL</span><br><span class="line">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span><br><span class="line">url: https://username.github.io/blog</span><br><span class="line">root: /blog/</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">在多级子目录的例子</span><br><span class="line"># URL</span><br><span class="line">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span><br><span class="line">url: https://username.github.io/blog/1122/abab</span><br><span class="line">root: /blog/1122/abab/</span><br></pre></td></tr></table></figure>
+<h3 id="2-ayer主题配置文件"><a href="#2-ayer主题配置文件" class="headerlink" title="2.ayer主题配置文件"></a>2.ayer主题配置文件</h3><p>主题封面(cover)在切换url后路径不会跟着变，需要在ayer主题配置文件中修改<code>path: /images/cover.jpg</code>为<code>path: /blog/images/cover.jpg</code>。<br>同理，favicon、logo和鼠标的path: &#x2F;images&#x2F;mouse.cur等等应该都需要改，如果确实是启用了的话，没启用改不改应该影响不大</p>
+<h3 id="3-ayer主题js和css文件"><a href="#3-ayer主题js和css文件" class="headerlink" title="3.ayer主题js和css文件"></a>3.ayer主题js和css文件</h3><p>多数的js和css文件引用都在<code>blog\themes\ayer\layout\_partial</code>文件夹下定义，如果切换后有报错，在对应的ejs文件中修改js和css文件路径即可<br>有一个为意外，如果启用了搜索功能，那么搜所定义的search.js和search.xml文件路径被定义在<code>blog\themes\ayer\source\dist\main.js</code>文件中</p>
+<h3 id="4-图片路径出错"><a href="#4-图片路径出错" class="headerlink" title="4.图片路径出错"></a>4.图片路径出错</h3><p>切换为子路径后，原hexo-asset-image无法正确获取路径，需修改插件的index.js，修改后的代码：<a target="_blank" rel="noopener" href="https://github.com/kukusun/hexo-asset-image/blob/5aa4b43a8cde75f103727570d0b45108fa757475/index.js">点击查看代码</a><a target="_blank" rel="noopener" href="https://github.com/kukusun/hexo-asset-image/commit/5aa4b43a8cde75f103727570d0b45108fa757475">点击查看commit</a></p>
  
       <!-- reward -->
       
