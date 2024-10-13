@@ -88,6 +88,213 @@
     
     
     <article
+  id="post-30-Win11升级跳过检测"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/blog/posts/32f357f1.html"
+    >30.Win11升级跳过检测</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/blog/posts/32f357f1.html" class="article-date">
+  <time datetime="2022-11-15T16:04:00.000Z" itemprop="datePublished">2022-11-16</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>1.打开Win11的ISO里的Setup，继续到检测升级不通过的界面，然后将$WINDOWS.~BT\Sources\Panther路径下的Appraiser_Data.ini清空并设置只读<br>2.点击安装程序的上一步后重新开始让安装程序检测，此时会直接通过，升级操作可以继续往下进行</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#快速选择到文件</span><br><span class="line">explorer.exe /select,&quot;%SystemDrive%\$WINDOWS.~BT\Sources\Panther\Appraiser_Data.ini&quot;</span><br></pre></td></tr></table></figure> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-29-Win11安装跳过检测"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/blog/posts/4e9b9305.html"
+    >29.Win11安装跳过检测</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/blog/posts/4e9b9305.html" class="article-date">
+  <time datetime="2022-11-15T16:03:00.000Z" itemprop="datePublished">2022-11-16</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>跳过命令如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">reg add &quot;HKEY_LOCAL_MACHINE\SYSTEM\Setup\LabConfig&quot; /v BypassTPMCheck /t REG_DWORD /d 1 /f</span><br><span class="line">reg add &quot;HKEY_LOCAL_MACHINE\SYSTEM\Setup\LabConfig&quot; /v BypassSecureBootCheck /t REG_DWORD /d 1 /f</span><br><span class="line">reg add &quot;HKEY_LOCAL_MACHINE\SYSTEM\Setup\LabConfig&quot; /v BypassCPUCheck /t REG_DWORD /d 1 /f</span><br><span class="line">reg add &quot;HKEY_LOCAL_MACHINE\SYSTEM\Setup\LabConfig&quot; /v BypassRAMCheck /t REG_DWORD /d 1 /f</span><br><span class="line">reg add &quot;HKEY_LOCAL_MACHINE\SYSTEM\Setup\LabConfig&quot; /v BypassStorageCheck /t REG_DWORD /d 1 /f</span><br></pre></td></tr></table></figure>
+<p>如需还原，命令如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reg delete &quot;HKEY_LOCAL_MACHINE\SYSTEM\Setup\LabConfig&quot; /f</span><br></pre></td></tr></table></figure> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-28-跳过Win11的OOBE账号登录注册"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/blog/posts/51cec15a.html"
+    >28.跳过Win11的OOBE账号登录注册</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/blog/posts/51cec15a.html" class="article-date">
+  <time datetime="2022-11-15T16:02:00.000Z" itemprop="datePublished">2022-11-16</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>操作过程不要连接网线或Wifi，否则可能无法成功跳过</p>
+<p>在OOBE出现时按下Shift+F10调出cmd，用cmd输入下方命令添加一个注册表，此时OOBE到设置网络时会出现一个我没有网络连接选项，点击即可跳过微软账号的登录注册，使用本地账号。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE&quot; /v BypassNRO /t REG_DWORD /d 1 /f</span><br></pre></td></tr></table></figure> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-27-添加修改Windows电源方案"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/blog/posts/f4e38c3b.html"
+    >27.添加修改Windows电源方案</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/blog/posts/f4e38c3b.html" class="article-date">
+  <time datetime="2022-11-15T16:01:00.000Z" itemprop="datePublished">2022-11-16</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>电源方案标准GUID：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a1841308-3541-4fab-bc81-f71556f20b4a  (节能)</span><br><span class="line">381b4222-f694-41f0-9685-ff5bb260df2e  (平衡)</span><br><span class="line">8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c  (高性能)</span><br><span class="line">e9a42b02-d5df-448d-aa00-03f14749eb61  (卓越性能)</span><br></pre></td></tr></table></figure>
+<p>列出所有电源方案</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">powercfg /list</span><br></pre></td></tr></table></figure>
+<p>使某个电源方案在系统上处于活动状态</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">powercfg /setactive</span><br></pre></td></tr></table></figure>
+<p>复制电源方案。选项后跟电源方案的GUID</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">powercfg /duplicatescheme</span><br></pre></td></tr></table></figure>
+<p>更多详细命令请官网查看：<a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/windows-hardware/design/device-experiences/powercfg-command-line-options">点击此处</a></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
   id="post-26-修改文件(夹)的创建修改日期"
   class="article article-type-post"
   itemscope
@@ -203,454 +410,13 @@
 </article>
 
     
-    <article
-  id="post-24-Windows升级降级版本的明细表"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/blog/posts/148739fa.html"
-    >24.Windows升级降级版本的明细表</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/blog/posts/148739fa.html" class="article-date">
-  <time datetime="2022-11-14T16:01:00.000Z" itemprop="datePublished">2022-11-15</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>微软官方网站：<a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/windows/deployment/upgrade/windows-10-edition-upgrades">点击此处</a></p>
-<h1 id="升级详情"><a href="#升级详情" class="headerlink" title="升级详情"></a>升级详情</h1><table>
-<thead>
-<tr>
-<th align="left">版本</th>
-<th align="center">使用移动设备管理<br>(MDM)</th>
-<th align="center">使用预<br>配包</th>
-<th align="center">使用命令<br>行工具</th>
-<th align="center">使用适用于企业的<br>Microsoft Store或电脑</th>
-<th align="center">手动输入<br>产品密钥</th>
-<th align="center">从Microsoft Store购<br>买许可证</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">家庭版&gt;专业版</td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-</tr>
-<tr>
-<td align="left">家庭版&gt;专业工作站版</td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-</tr>
-<tr>
-<td align="left">家庭版&gt;专业教育版</td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-</tr>
-<tr>
-<td align="left">家庭版&gt;教育版</td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-</tr>
-<tr>
-<td align="left">专业版&gt;专业工作站版</td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png">(适用于企业的 Microsoft Store)</td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-</tr>
-<tr>
-<td align="left">专业版&gt;专业教育版</td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png">(适用于企业的 Microsoft Store)</td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-</tr>
-<tr>
-<td align="left">专业版&gt;教育版</td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png">(适用于企业的 Microsoft Store)</td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-</tr>
-<tr>
-<td align="left">专业版&gt;企业版</td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png">(1703 – 电脑)<br>(1709 – 适用于企业的 Microsoft Store)</td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-</tr>
-<tr>
-<td align="left">专业工作站版&gt;专业教育版</td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png">(适用于企业的 Microsoft Store)</td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-</tr>
-<tr>
-<td align="left">专业工作站版&gt;教育版</td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png">(适用于企业的 Microsoft Store)</td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-</tr>
-<tr>
-<td align="left">专业工作站版&gt;企业版</td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png">(1703 – 电脑)<br>(1709 – 适用于企业的 Microsoft Store)</td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-</tr>
-<tr>
-<td align="left">专业教育版&gt;教育版</td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png">(适用于企业的 Microsoft Store)</td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-</tr>
-<tr>
-<td align="left">企业版&gt;教育版</td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png">(适用于企业的 Microsoft Store)</td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th align="center"><img src="/blog/posts/148739fa/x_blk.png" title="不支持"></th>
-<th align="center"><img src="/blog/posts/148739fa/check_grn.png" title="支持，需重新启动"></th>
-<th align="center"><img src="/blog/posts/148739fa/check_blu.png" title="支持，无需重新启动"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">不支持</td>
-<td align="center">支持<br>需重新启动</td>
-<td align="center">支持<br>无需重新启动</td>
-</tr>
-</tbody></table>
-<h1 id="降级详情"><a href="#降级详情" class="headerlink" title="降级详情"></a>降级详情</h1><table>
-<thead>
-<tr>
-<th align="left">版本</th>
-<th align="center">家庭版</th>
-<th align="center">专业版</th>
-<th align="center">专业工作站版</th>
-<th align="center">专业教育版</th>
-<th align="center">教育版</th>
-<th align="center">企业版 LTSC</th>
-<th align="center">企业版</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">家庭版</td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-</tr>
-<tr>
-<td align="left">专业版</td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-</tr>
-<tr>
-<td align="left">专业工作站版</td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-</tr>
-<tr>
-<td align="left">专业教育版</td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-</tr>
-<tr>
-<td align="left">教育版</td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-</tr>
-<tr>
-<td align="left">企业版 LTSC</td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-</tr>
-<tr>
-<td align="left">企业版</td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td>
-<td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th align="center"><img src="/blog/posts/148739fa/x_blk.png" title="不支持"></th>
-<th align="center"><img src="/blog/posts/148739fa/check_grn.png" title="支持"></th>
-<th align="center"><img src="/blog/posts/148739fa/check_blu.png" title="不被视为降级或升级"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">不支持</td>
-<td align="center">支持</td>
-<td align="center">不被视为<br>降级或升级</td>
-</tr>
-</tbody></table>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
-    <article
-  id="post-23-清理WinSxS文件夹"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/blog/posts/639910d8.html"
-    >23.清理WinSxS文件夹</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/blog/posts/639910d8.html" class="article-date">
-  <time datetime="2022-11-12T16:04:00.000Z" itemprop="datePublished">2022-11-13</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>微软官方网站：<a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/windows-hardware/manufacture/desktop/clean-up-the-winsxs-folder">点击此处</a></p>
-<p>常规清理：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Dism /online /Cleanup-Image /StartComponentCleanup</span><br></pre></td></tr></table></figure>
-<p>在 Windows 10 或更高版本的运行版本中，将 &#x2F;ResetBase 参数和 DISM.exe 的 &#x2F;StartComponentCleanup 参数一起使用，将删除组件存储区中每个组件的所有替换版本。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Dism /online /Cleanup-Image /StartComponentCleanup /ResetBase</span><br></pre></td></tr></table></figure> 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
-    <article
-  id="post-22-安装Microsoft Visual C++ Redistributable"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/blog/posts/991f594f.html"
-    >22.安装Microsoft Visual C++ Redistributable</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/blog/posts/991f594f.html" class="article-date">
-  <time datetime="2022-11-12T16:03:00.000Z" itemprop="datePublished">2022-11-13</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>微软官方网站：<a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-CN/cpp/windows/latest-supported-vc-redist?view=msvc-170">点击此处</a></p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
-    <article
-  id="post-21-把CMD设置为英文显示"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/blog/posts/df200f8d.html"
-    >21.把CMD设置为英文显示</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/blog/posts/df200f8d.html" class="article-date">
-  <time datetime="2022-11-12T16:02:00.000Z" itemprop="datePublished">2022-11-13</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>chcp 65001</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
   </article>
   
 
   
   <nav class="page-nav">
     
-    <a class="extend prev" rel="prev" href="/blog/page/9/">上一页</a><a class="page-number" href="/blog/">1</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/8/">8</a><a class="page-number" href="/blog/page/9/">9</a><span class="page-number current">10</span><a class="page-number" href="/blog/page/11/">11</a><a class="page-number" href="/blog/page/12/">12</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/14/">14</a><a class="extend next" rel="next" href="/blog/page/11/">下一页</a>
+    <a class="extend prev" rel="prev" href="/blog/page/9/">上一页</a><a class="page-number" href="/blog/">1</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/8/">8</a><a class="page-number" href="/blog/page/9/">9</a><span class="page-number current">10</span><a class="page-number" href="/blog/page/11/">11</a><a class="page-number" href="/blog/page/12/">12</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/15/">15</a><a class="extend next" rel="next" href="/blog/page/11/">下一页</a>
   </nav>
   
 </section>

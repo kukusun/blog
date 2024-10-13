@@ -4,11 +4,101 @@
   
     
     <entry>
+      <title>PotPlayer - 音频视频播放软件</title>
+      <link href="/blog/posts/8cb9d8fc.html"/>
+      <url>/blog/posts/8cb9d8fc.html</url>
+      
+        <content type="html"><![CDATA[<p>官方网站：<br><a href="https://potplayer.tv/">官网一</a><br><a href="https://potplayer.app/">官网二</a><br><a href="https://potplayer.daum.net/">官网三(国内应该访问不了)</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+            <tag> 音频视频处理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>83.Global Speed - 浏览器音频视频处理插件</title>
+      <link href="/blog/posts/85d0fb82.html"/>
+      <url>/blog/posts/85d0fb82.html</url>
+      
+        <content type="html"><![CDATA[<p>官方网站：<a href="https://github.com/polywock/globalSpeed">点击此处</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 浏览器 </tag>
+            
+            <tag> 插件 </tag>
+            
+            <tag> 音频视频处理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>82.AdGuard - 浏览器广告拦截插件</title>
+      <link href="/blog/posts/9b4ab63c.html"/>
+      <url>/blog/posts/9b4ab63c.html</url>
+      
+        <content type="html"><![CDATA[<p>官方网站：<a href="https://adguard.com/zh_cn/adguard-browser-extension/overview.html">点击此处</a><br>Github项目页：<a href="https://github.com/AdguardTeam/AdguardBrowserExtension">点击此处</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 浏览器 </tag>
+            
+            <tag> 插件 </tag>
+            
+            <tag> 广告拦截 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>81.Adblock Plus - 浏览器广告拦截插件</title>
+      <link href="/blog/posts/a728e7db.html"/>
+      <url>/blog/posts/a728e7db.html</url>
+      
+        <content type="html"><![CDATA[<p>官方网站：<a href="https://adblockplus.org/zh_CN">点击此处</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 浏览器 </tag>
+            
+            <tag> 插件 </tag>
+            
+            <tag> 广告拦截 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>80.将Hexo博客迁移到子目录下</title>
       <link href="/blog/posts/f9d3585f.html"/>
       <url>/blog/posts/f9d3585f.html</url>
       
-        <content type="html"><![CDATA[<h3 id="1-hexo配置文件"><a href="#1-hexo配置文件" class="headerlink" title="1.hexo配置文件"></a>1.hexo配置文件</h3><p>如果url设置为<code>https://username.github.io</code>，那么root可以不要。<br>如果url设置为子目录，那么要加入root并将值设置为子目录。<br>例如：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">不在子目录的例子</span><br><span class="line"># URL</span><br><span class="line">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span><br><span class="line">url: https://username.github.io/blog</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">在一级子目录的例子</span><br><span class="line"># URL</span><br><span class="line">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span><br><span class="line">url: https://username.github.io/blog</span><br><span class="line">root: /blog/</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">在多级子目录的例子</span><br><span class="line"># URL</span><br><span class="line">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span><br><span class="line">url: https://username.github.io/blog/1122/abab</span><br><span class="line">root: /blog/1122/abab/</span><br></pre></td></tr></table></figure><h3 id="2-ayer主题配置文件"><a href="#2-ayer主题配置文件" class="headerlink" title="2.ayer主题配置文件"></a>2.ayer主题配置文件</h3><p>主题封面(cover)在切换url后路径不会跟着变，需要在ayer主题配置文件中修改<code>path: /images/cover.jpg</code>为<code>path: /blog/images/cover.jpg</code>。<br>同理，favicon、logo和鼠标的path: &#x2F;images&#x2F;mouse.cur等等应该都需要改，如果确实是启用了的话，没启用改不改应该影响不大</p><h3 id="3-ayer主题js和css文件"><a href="#3-ayer主题js和css文件" class="headerlink" title="3.ayer主题js和css文件"></a>3.ayer主题js和css文件</h3><p>多数的js和css文件引用都在<code>blog\themes\ayer\layout\_partial</code>文件夹下定义，如果切换后有报错，在对应的ejs文件中修改js和css文件路径即可<br>有一个为意外，如果启用了搜索功能，那么搜所定义的search.js和search.xml文件路径被定义在<code>blog\themes\ayer\source\dist\main.js</code>文件中</p><h3 id="4-图片路径出错"><a href="#4-图片路径出错" class="headerlink" title="4.图片路径出错"></a>4.图片路径出错</h3><p>切换为子路径后，原hexo-asset-image无法正确获取路径，需修改插件的index.js。<br>修改后的文件：<a href="https://github.com/kukusun/hexo-asset-image/blob/5aa4b43a8cde75f103727570d0b45108fa757475/index.js">点击查看文件</a><br>修改后的commit：<a href="https://github.com/kukusun/hexo-asset-image/commit/5aa4b43a8cde75f103727570d0b45108fa757475">点击查看commit记录</a></p>]]></content>
+        <content type="html"><![CDATA[<h3 id="1-hexo配置文件"><a href="#1-hexo配置文件" class="headerlink" title="1.hexo配置文件"></a>1.hexo配置文件</h3><p>如果url设置为<code>https://username.github.io</code>，那么root可以不要。<br>如果url设置为子目录，那么要加入root并将值设置为子目录。<br>例如：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">不在子目录的例子</span><br><span class="line"># URL</span><br><span class="line">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span><br><span class="line">url: https://username.github.io/blog</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">在一级子目录的例子</span><br><span class="line"># URL</span><br><span class="line">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span><br><span class="line">url: https://username.github.io/blog</span><br><span class="line">root: /blog/</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">在多级子目录的例子</span><br><span class="line"># URL</span><br><span class="line">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span><br><span class="line">url: https://username.github.io/blog/1122/abab</span><br><span class="line">root: /blog/1122/abab/</span><br></pre></td></tr></table></figure><h3 id="2-ayer主题配置文件"><a href="#2-ayer主题配置文件" class="headerlink" title="2.ayer主题配置文件"></a>2.ayer主题配置文件</h3><p>主题封面(cover)在切换url后路径不会跟着变，需要在ayer主题配置文件中修改<code>path: /images/cover.jpg</code>为<code>path: /blog/images/cover.jpg</code>。<br>同理，favicon、logo和鼠标的path: &#x2F;images&#x2F;mouse.cur等等应该都需要改，如果确实是启用了的话，没启用改不改应该影响不大</p><h3 id="3-ayer主题js和css文件"><a href="#3-ayer主题js和css文件" class="headerlink" title="3.ayer主题js和css文件"></a>3.ayer主题js和css文件</h3><p>多数的js和css文件引用都在<code>blog\themes\ayer\layout\_partial</code>文件夹下定义，如果切换后有报错，在对应的ejs文件中修改js和css文件路径即可<br>有一个为意外，如果启用了搜索功能，那么搜索需要的search.js和search.xml文件路径被定义在<code>blog\themes\ayer\source\dist\main.js</code>文件中</p><h3 id="4-图片路径出错"><a href="#4-图片路径出错" class="headerlink" title="4.图片路径出错"></a>4.图片路径出错</h3><p>切换为子路径后，原hexo-asset-image无法正确获取路径，需修改插件的index.js。<br>修改后的文件：<a href="https://github.com/kukusun/hexo-asset-image/blob/5aa4b43a8cde75f103727570d0b45108fa757475/index.js">点击查看文件</a><br>修改后的commit：<a href="https://github.com/kukusun/hexo-asset-image/commit/5aa4b43a8cde75f103727570d0b45108fa757475">点击查看commit记录</a></p>]]></content>
       
       
       
@@ -185,17 +275,21 @@
     
     
     <entry>
-      <title>71.浏览器插件汇总</title>
+      <title>71.SwitchyOmega - 浏览器代理管理插件</title>
       <link href="/blog/posts/8abe9cdc.html"/>
       <url>/blog/posts/8abe9cdc.html</url>
       
-        <content type="html"><![CDATA[<p>1.Adblock Plus<br>屏蔽广告的浏览器插件，有收费会员版本，但免费版已经够用<br>官方网站：<a href="https://adblockplus.org/zh_CN">点击此处</a></p><p>2.Global Speed<br>调整视频速度的插件，可以倍速播放视频网站的广告来跳过广告<br>官方网站：<a href="https://github.com/polywock/globalSpeed">点击此处</a></p><p>3.SwitchyOmega<br>设置代理上网的插件，很久没更新了的样子<br>官方网站：<a href="https://github.com/FelisCatus/SwitchyOmega">点击此处</a><br>SwitchyOmega_2.5.21：<a href="/blog/download/71/SwitchyOmega_2.5.21.crx" download>点此下载</a></p>]]></content>
+        <content type="html"><![CDATA[<p>官方网站：<a href="https://github.com/FelisCatus/SwitchyOmega">点击此处</a><br>SwitchyOmega_2.5.21：<a href="/blog/download/71/SwitchyOmega_2.5.21.crx" download>点此下载</a></p>]]></content>
       
       
       
         <tags>
             
+            <tag> 科学上网 </tag>
+            
             <tag> 浏览器 </tag>
+            
+            <tag> 插件 </tag>
             
         </tags>
       
@@ -1104,7 +1198,7 @@
       <link href="/blog/posts/148739fa.html"/>
       <url>/blog/posts/148739fa.html</url>
       
-        <content type="html"><![CDATA[<p>微软官方网站：<a href="https://learn.microsoft.com/zh-cn/windows/deployment/upgrade/windows-10-edition-upgrades">点击此处</a></p><h1 id="升级详情"><a href="#升级详情" class="headerlink" title="升级详情"></a>升级详情</h1><table><thead><tr><th align="left">版本</th><th align="center">使用移动设备管理<br>(MDM)</th><th align="center">使用预<br>配包</th><th align="center">使用命令<br>行工具</th><th align="center">使用适用于企业的<br>Microsoft Store或电脑</th><th align="center">手动输入<br>产品密钥</th><th align="center">从Microsoft Store购<br>买许可证</th></tr></thead><tbody><tr><td align="left">家庭版&gt;专业版</td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td></tr><tr><td align="left">家庭版&gt;专业工作站版</td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td></tr><tr><td align="left">家庭版&gt;专业教育版</td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td></tr><tr><td align="left">家庭版&gt;教育版</td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td></tr><tr><td align="left">专业版&gt;专业工作站版</td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/check_blu.png">(适用于企业的 Microsoft Store)</td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td></tr><tr><td align="left">专业版&gt;专业教育版</td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/check_blu.png">(适用于企业的 Microsoft Store)</td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td></tr><tr><td align="left">专业版&gt;教育版</td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png">(适用于企业的 Microsoft Store)</td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td></tr><tr><td align="left">专业版&gt;企业版</td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/check_blu.png">(1703 – 电脑)<br>(1709 – 适用于企业的 Microsoft Store)</td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td></tr><tr><td align="left">专业工作站版&gt;专业教育版</td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/check_blu.png">(适用于企业的 Microsoft Store)</td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td></tr><tr><td align="left">专业工作站版&gt;教育版</td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png">(适用于企业的 Microsoft Store)</td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td></tr><tr><td align="left">专业工作站版&gt;企业版</td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/check_blu.png">(1703 – 电脑)<br>(1709 – 适用于企业的 Microsoft Store)</td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td></tr><tr><td align="left">专业教育版&gt;教育版</td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png">(适用于企业的 Microsoft Store)</td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td></tr><tr><td align="left">企业版&gt;教育版</td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png">(适用于企业的 Microsoft Store)</td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td></tr></tbody></table><table><thead><tr><th align="center"><img src="/blog/posts/148739fa/x_blk.png" title="不支持"></th><th align="center"><img src="/blog/posts/148739fa/check_grn.png" title="支持，需重新启动"></th><th align="center"><img src="/blog/posts/148739fa/check_blu.png" title="支持，无需重新启动"></th></tr></thead><tbody><tr><td align="center">不支持</td><td align="center">支持<br>需重新启动</td><td align="center">支持<br>无需重新启动</td></tr></tbody></table><h1 id="降级详情"><a href="#降级详情" class="headerlink" title="降级详情"></a>降级详情</h1><table><thead><tr><th align="left">版本</th><th align="center">家庭版</th><th align="center">专业版</th><th align="center">专业工作站版</th><th align="center">专业教育版</th><th align="center">教育版</th><th align="center">企业版 LTSC</th><th align="center">企业版</th></tr></thead><tbody><tr><td align="left">家庭版</td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td></tr><tr><td align="left">专业版</td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td></tr><tr><td align="left">专业工作站版</td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td></tr><tr><td align="left">专业教育版</td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td></tr><tr><td align="left">教育版</td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td></tr><tr><td align="left">企业版 LTSC</td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td></tr><tr><td align="left">企业版</td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/check_grn.png"></td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td><td align="center"><img src="/blog/posts/148739fa/x_blk.png"></td><td align="center"><img src="/blog/posts/148739fa/check_blu.png"></td></tr></tbody></table><table><thead><tr><th align="center"><img src="/blog/posts/148739fa/x_blk.png" title="不支持"></th><th align="center"><img src="/blog/posts/148739fa/check_grn.png" title="支持"></th><th align="center"><img src="/blog/posts/148739fa/check_blu.png" title="不被视为降级或升级"></th></tr></thead><tbody><tr><td align="center">不支持</td><td align="center">支持</td><td align="center">不被视为<br>降级或升级</td></tr></tbody></table>]]></content>
+        <content type="html"><![CDATA[<p>微软官方网站：<a href="https://learn.microsoft.com/zh-cn/windows/deployment/upgrade/windows-edition-upgrades">点击此处</a></p><h3 id="升级详情"><a href="#升级详情" class="headerlink" title="升级详情"></a>升级详情</h3><table><thead><tr><th align="left">版本</th><th align="center">使用移动设备管理<br>(MDM)</th><th align="center">使用预<br>配包</th><th align="center">使用命令<br>行工具</th><th align="center">使用适用于企业的<br>Microsoft Store或电脑</th><th align="center">手动输入<br>产品密钥</th><th align="center">从Microsoft Store购<br>买许可证</th></tr></thead><tbody><tr><td align="left">家庭版&gt;专业版</td><td align="center">❌</td><td align="center">❌</td><td align="center">❌</td><td align="center">❌</td><td align="center">☑️</td><td align="center">☑️</td></tr><tr><td align="left">家庭版&gt;专业工作站版</td><td align="center">❌</td><td align="center">❌</td><td align="center">❌</td><td align="center">❌</td><td align="center">☑️</td><td align="center">☑️</td></tr><tr><td align="left">家庭版&gt;专业教育版</td><td align="center">☑️</td><td align="center">☑️</td><td align="center">☑️</td><td align="center">❌</td><td align="center">☑️</td><td align="center">❌</td></tr><tr><td align="left">家庭版&gt;教育版</td><td align="center">☑️</td><td align="center">☑️</td><td align="center">☑️</td><td align="center">❌</td><td align="center">☑️</td><td align="center">❌</td></tr><tr><td align="left">专业版&gt;专业工作站版</td><td align="center">✅</td><td align="center">✅</td><td align="center">✅</td><td align="center">✅</td><td align="center">✅</td><td align="center">✅</td></tr><tr><td align="left">专业版&gt;专业教育版</td><td align="center">✅</td><td align="center">✅</td><td align="center">✅</td><td align="center">✅</td><td align="center">✅</td><td align="center">❌</td></tr><tr><td align="left">专业版&gt;教育版</td><td align="center">☑️</td><td align="center">☑️</td><td align="center">☑️</td><td align="center">☑️</td><td align="center">☑️</td><td align="center">❌</td></tr><tr><td align="left">专业版&gt;企业版</td><td align="center">✅</td><td align="center">✅</td><td align="center">✅</td><td align="center">✅</td><td align="center">✅</td><td align="center">❌</td></tr><tr><td align="left">专业工作站版&gt;专业教育版</td><td align="center">✅</td><td align="center">✅</td><td align="center">✅</td><td align="center">✅</td><td align="center">✅</td><td align="center">❌</td></tr><tr><td align="left">专业工作站版&gt;教育版</td><td align="center">☑️</td><td align="center">☑️</td><td align="center">☑️</td><td align="center">☑️</td><td align="center">☑️</td><td align="center">❌</td></tr><tr><td align="left">专业工作站版&gt;企业版</td><td align="center">✅</td><td align="center">✅</td><td align="center">✅</td><td align="center">✅</td><td align="center">✅</td><td align="center">❌</td></tr><tr><td align="left">专业教育版&gt;教育版</td><td align="center">☑️</td><td align="center">☑️</td><td align="center">☑️</td><td align="center">☑️</td><td align="center">☑️</td><td align="center">❌</td></tr><tr><td align="left">企业版&gt;教育版</td><td align="center">☑️</td><td align="center">☑️</td><td align="center">☑️</td><td align="center">☑️</td><td align="center">☑️</td><td align="center">❌</td></tr></tbody></table><ul><li>✅ &#x3D; 支持，无需重启。</li><li>☑️ &#x3D; 支持，但需要重新启动。</li><li>❌ &#x3D; 不支持。</li></ul><h3 id="降级详情"><a href="#降级详情" class="headerlink" title="降级详情"></a>降级详情</h3><table><thead><tr><th align="left">版本</th><th align="center">家庭版</th><th align="center">专业版</th><th align="center">专业工作站版</th><th align="center">专业教育版</th><th align="center">教育版</th><th align="center">企业版 LTSC</th><th align="center">企业版</th></tr></thead><tbody><tr><td align="left">家庭版</td><td align="center">☑️</td><td align="center">❌</td><td align="center">❌</td><td align="center">❌</td><td align="center">❌</td><td align="center">❌</td><td align="center">❌</td></tr><tr><td align="left">专业版</td><td align="center">❌</td><td align="center">☑️</td><td align="center">❌</td><td align="center">❌</td><td align="center">❌</td><td align="center">❌</td><td align="center">❌</td></tr><tr><td align="left">专业工作站版</td><td align="center">❌</td><td align="center">❌</td><td align="center">☑️</td><td align="center">❌</td><td align="center">❌</td><td align="center">❌</td><td align="center">❌</td></tr><tr><td align="left">专业教育版</td><td align="center">❌</td><td align="center">❌</td><td align="center">❌</td><td align="center">☑️</td><td align="center">❌</td><td align="center">❌</td><td align="center">❌</td></tr><tr><td align="left">教育版</td><td align="center">❌</td><td align="center">✅</td><td align="center">✅</td><td align="center">✅</td><td align="center">☑️</td><td align="center">❌</td><td align="center">☑️</td></tr><tr><td align="left">企业版 LTSC</td><td align="center">❌</td><td align="center">❌</td><td align="center">❌</td><td align="center">❌</td><td align="center">❌</td><td align="center">☑️</td><td align="center">❌</td></tr><tr><td align="left">企业版</td><td align="center">❌</td><td align="center">✅</td><td align="center">✅</td><td align="center">✅</td><td align="center">☑️</td><td align="center">❌</td><td align="center">☑️</td></tr></tbody></table><ul><li>✅ &#x3D; 支持的降级路径。</li><li>☑️ &#x3D; 不被视为降级或升级。</li><li>❌ &#x3D; 不支持或不降级。</li></ul>]]></content>
       
       
       
@@ -1532,6 +1626,8 @@
             
             <tag> V2ray </tag>
             
+            <tag> 科学上网 </tag>
+            
         </tags>
       
     </entry>
@@ -1550,6 +1646,8 @@
         <tags>
             
             <tag> V2ray </tag>
+            
+            <tag> 科学上网 </tag>
             
         </tags>
       
