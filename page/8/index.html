@@ -88,6 +88,67 @@
     
     
     <article
+  id="post-43-用命令行的方式关闭开启Windows防火墙"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/blog/posts/c6ee7776.html"
+    >43.用命令行的方式关闭开启Windows防火墙</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/blog/posts/c6ee7776.html" class="article-date">
+  <time datetime="2023-03-10T08:17:30.000Z" itemprop="datePublished">2023-03-10</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>开启防火墙</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netsh advfirewall set allprofiles state on</span><br></pre></td></tr></table></figure>
+<p>关闭防火墙</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netsh advfirewall set allprofiles state off</span><br></pre></td></tr></table></figure>
+<p>重置防火墙</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netsh advfirewall reset</span><br></pre></td></tr></table></figure>
+
+<p>单个修改则仅需把allprofiles换成对应的即可</p>
+<ul>
+<li>域：domainprofile</li>
+<li>专用：privateprofile</li>
+<li>公用：publicprofile</li>
+</ul>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
   id="post-42-部分Windows系统设置页面的打开命令"
   class="article article-type-post"
   itemscope
@@ -360,59 +421,6 @@
     <footer class="article-footer">
        
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
-    <article
-  id="post-37-Visual Studio创建系统服务程序"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/blog/posts/1c9e3093.html"
-    >37.Visual Studio创建系统服务程序</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/blog/posts/1c9e3093.html" class="article-date">
-  <time datetime="2023-01-29T16:00:00.000Z" itemprop="datePublished">2023-01-30</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>1.选择“Windows 服务”创建项目<br><img src="/blog/posts/1c9e3093/01.png" alt="Windows 服务" title="Windows 服务"><br>2.在Service.cs中创建安装程序<br><img src="/blog/posts/1c9e3093/02.png" alt="点击添加安装程序" title="点击添加安装程序"><br>3.serviceInstaller填写Description、DisplayName、ServiceName，其对应关系如下图。StartType设置为Automatic让启动类型设置为自动<br><img src="/blog/posts/1c9e3093/03.png"><br><img src="/blog/posts/1c9e3093/04.png"><br>4.serviceProcessInstaller的Account更改为LocalSystem。<br><img src="/blog/posts/1c9e3093/05.png"><br>5.编写代码，在Service.cs的OnStart编写代码<br>6.安装卸载命令</p>
-<ul>
-<li>安装<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Windows\Microsoft.NET\Framework64\v4.0.30319\InstallUtil.exe 程序路径</span><br></pre></td></tr></table></figure></li>
-<li>卸载<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Windows\Microsoft.NET\Framework64\v4.0.30319\InstallUtil.exe -u 程序路径</span><br></pre></td></tr></table></figure></li>
-</ul>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/C/" rel="tag">C#</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li></ul>
 
     </footer>
   </div>

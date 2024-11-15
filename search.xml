@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>85.在Windows上打开InternetExplorer</title>
+      <link href="/blog/posts/b64d5d9e.html"/>
+      <url>/blog/posts/b64d5d9e.html</url>
+      
+        <content type="html"><![CDATA[<p>该方法用于在Win10&#x2F;Win11临时开启InternetExplorer，由于InternetExplorer已经被微软放弃，所以如非必要情况下，不要用此方法打开InternetExplorer使用。<br>如需临时使用请在cmd中执行下面的命令</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cmd /C &quot;echo CreateObject(&quot;InternetExplorer.Application&quot;).Visible=true &gt; %TEMP%\openie.vbs &amp;&amp; wscript %TEMP%\openie.vbs &amp;&amp; del %TEMP%\openie.vbs&quot;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+            <tag> 浏览器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>PotPlayer - 音频视频播放软件</title>
       <link href="/blog/posts/8cb9d8fc.html"/>
       <url>/blog/posts/8cb9d8fc.html</url>

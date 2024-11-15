@@ -88,6 +88,57 @@
     
     
     <article
+  id="post-49-Win10时钟显示秒"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/blog/posts/2dee8536.html"
+    >49.Win10时钟显示秒</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/blog/posts/2dee8536.html" class="article-date">
+  <time datetime="2023-03-11T06:52:08.000Z" itemprop="datePublished">2023-03-11</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>打开Win10时钟的秒显示</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">taskkill /F /IM explorer.exe &amp; reg add &quot;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced&quot; /v ShowSecondsInSystemClock /t REG_DWORD /d 1 /f &amp; start %windir%\explorer.exe</span><br></pre></td></tr></table></figure>
+<p>关闭Win10时钟的秒显示</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">taskkill /F /IM explorer.exe &amp; reg delete &quot;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced&quot; /v ShowSecondsInSystemClock /f &amp; start %windir%\explorer.exe</span><br></pre></td></tr></table></figure> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
   id="post-48-去除桌面图标小箭头和盾牌"
   class="article article-type-post"
   itemscope
@@ -326,67 +377,6 @@
 <p>命令组合修改</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$Name = Get-NetConnectionProfile;Set-NetConnectionProfile -Name $Name.Name -NetworkCategory Private</span><br></pre></td></tr></table></figure>
 <h3 id="方法二：修改注册表（暂时等之后再总结）"><a href="#方法二：修改注册表（暂时等之后再总结）" class="headerlink" title="方法二：修改注册表（暂时等之后再总结）"></a>方法二：修改注册表（暂时等之后再总结）</h3> 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
-    <article
-  id="post-43-用命令行的方式关闭开启Windows防火墙"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/blog/posts/c6ee7776.html"
-    >43.用命令行的方式关闭开启Windows防火墙</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/blog/posts/c6ee7776.html" class="article-date">
-  <time datetime="2023-03-10T08:17:30.000Z" itemprop="datePublished">2023-03-10</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>开启防火墙</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netsh advfirewall set allprofiles state on</span><br></pre></td></tr></table></figure>
-<p>关闭防火墙</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netsh advfirewall set allprofiles state off</span><br></pre></td></tr></table></figure>
-<p>重置防火墙</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netsh advfirewall reset</span><br></pre></td></tr></table></figure>
-
-<p>单个修改则仅需把allprofiles换成对应的即可</p>
-<ul>
-<li>域：domainprofile</li>
-<li>专用：privateprofile</li>
-<li>公用：publicprofile</li>
-</ul>
- 
       <!-- reward -->
       
     </div>
