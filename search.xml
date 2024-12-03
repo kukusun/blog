@@ -4,6 +4,48 @@
   
     
     <entry>
+      <title>89.CleanFlashInstaller - 干净的Flash安装工具</title>
+      <link href="/blog/posts/5871ca3c.html"/>
+      <url>/blog/posts/5871ca3c.html</url>
+      
+        <content type="html"><![CDATA[<p>Github项目页：<a href="https://github.com/Aira-Sakuranomiya/CleanFlashInstaller">点击此处</a><br>GitLab项目页：<a href="https://gitlab.com/cleanflash/installer">点击此处</a></p><p>备注：<br>1.GitLab更新的快一点，项目源码也托管在GitLab上，不太清楚Github的项目是否和GitLab的项目是同一作者，总之优先推荐从GitLab下载使用。<br>2.Flash已被官方抛弃，如非必要情况下，不要使用Flash，非常不安全。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+            <tag> 浏览器 </tag>
+            
+            <tag> Flash </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>88.iptv-checker - IPTV源检查工具</title>
+      <link href="/blog/posts/85b76086.html"/>
+      <url>/blog/posts/85b76086.html</url>
+      
+        <content type="html"><![CDATA[<p>Github项目页：<a href="https://github.com/zhimin-dev/iptv-checker">点击此处</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> IPTV </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>87.imewlconverter - 开源输入法词库转换程序</title>
       <link href="/blog/posts/6e92f57d.html"/>
       <url>/blog/posts/6e92f57d.html</url>
@@ -50,7 +92,7 @@
       <link href="/blog/posts/b64d5d9e.html"/>
       <url>/blog/posts/b64d5d9e.html</url>
       
-        <content type="html"><![CDATA[<p>该方法用于在Win10&#x2F;Win11临时开启Internet Explorer，由于Internet Explorer已经被微软放弃，所以如非必要情况下，不要用此方法打开Internet Explorer使用。<br>如需临时使用请在cmd中执行下面的命令</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cmd /C &quot;echo CreateObject(&quot;InternetExplorer.Application&quot;).Visible=true &gt; %TEMP%\openie.vbs &amp;&amp; wscript %TEMP%\openie.vbs &amp;&amp; del %TEMP%\openie.vbs&quot;</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<p>该方法用于在Win10&#x2F;Win11临时开启Internet Explorer。<br>如需临时使用请在cmd中执行下面的命令</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cmd /C &quot;echo CreateObject(&quot;InternetExplorer.Application&quot;).Visible=true &gt; %TEMP%\openie.vbs &amp;&amp; wscript %TEMP%\openie.vbs &amp;&amp; del %TEMP%\openie.vbs&quot;</span><br></pre></td></tr></table></figure><p>备注：<br>由于Internet Explorer已经被微软放弃，所以如非必要情况下，不要用此方法打开Internet Explorer使用。</p>]]></content>
       
       
       

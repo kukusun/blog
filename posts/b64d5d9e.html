@@ -78,7 +78,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">91</span>
+            <span class="post-count">93</span>
         </span>
     </span>
 
@@ -100,8 +100,11 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <p>该方法用于在Win10&#x2F;Win11临时开启Internet Explorer，由于Internet Explorer已经被微软放弃，所以如非必要情况下，不要用此方法打开Internet Explorer使用。<br>如需临时使用请在cmd中执行下面的命令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cmd /C &quot;echo CreateObject(&quot;InternetExplorer.Application&quot;).Visible=true &gt; %TEMP%\openie.vbs &amp;&amp; wscript %TEMP%\openie.vbs &amp;&amp; del %TEMP%\openie.vbs&quot;</span><br></pre></td></tr></table></figure> 
+  <p>该方法用于在Win10&#x2F;Win11临时开启Internet Explorer。<br>如需临时使用请在cmd中执行下面的命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cmd /C &quot;echo CreateObject(&quot;InternetExplorer.Application&quot;).Visible=true &gt; %TEMP%\openie.vbs &amp;&amp; wscript %TEMP%\openie.vbs &amp;&amp; del %TEMP%\openie.vbs&quot;</span><br></pre></td></tr></table></figure>
+
+<p>备注：<br>由于Internet Explorer已经被微软放弃，所以如非必要情况下，不要用此方法打开Internet Explorer使用。</p>
+ 
       <!-- reward -->
       
     </div>
