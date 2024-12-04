@@ -88,6 +88,112 @@
     
     
     <article
+  id="post-67-文件传输工具汇总"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/blog/posts/d2726044.html"
+    >67.文件传输工具汇总</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/blog/posts/d2726044.html" class="article-date">
+  <time datetime="2023-09-25T14:38:18.000Z" itemprop="datePublished">2023-09-25</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>1.snapdrop (仅限局域网)<br>snapdrop官方网站：<a target="_blank" rel="noopener" href="https://snapdrop.net/">点击此处</a><br>网页加载完成后即可发现对方设备，单击对方设备选择文件完成文件传输<br>snapdrop的GitHub项目页：<a target="_blank" rel="noopener" href="https://github.com/RobinLinus/snapdrop">点击此处</a></p>
+<p>2.piping (貌似是通过服务器中转传输，可能效果和速度比较不好)<br>piping官方网站：<a target="_blank" rel="noopener" href="https://piping-ui.org/">点击此处</a><br>选择要上传的文件后双方输入同样的Secret path即可进行文件或文本传输<br>piping-server的GitHub项目页：<a target="_blank" rel="noopener" href="https://github.com/nwtgck/piping-server">点击此处</a></p>
+<p>3.transfer (.zip域名，比较旧的浏览器可能无法正确访问)<br>transfer官方网站：<a target="_blank" rel="noopener" href="https://transfer.zip/">点击此处</a><br>选择文件点击send后会跳出二维码，扫码或复制访问链接即可进行文件传输<br>transfer的GitHub项目页：<a target="_blank" rel="noopener" href="https://github.com/robinkarlberg/transfer.zip-web">点击此处</a></p>
+<p>4.deershare (小鹿快传)<br>deershare官方网站：<a target="_blank" rel="noopener" href="https://deershare.com/">点击此处</a><br>选择好要上传文件后会出现收件码，接收端选择接收页面并填入收件码即可<br>deershare的GitHub项目页：<a target="_blank" rel="noopener" href="https://github.com/fanchangyong/deershare">点击此处</a></p>
+<p>5.PP直连<br>PP直连官方网站：<a target="_blank" rel="noopener" href="https://www.ppzhilian.com/">点击此处</a><br>选择右侧的连接方式，通过账号、局域网、临时网址或短码进行互联<br>连接完成后点击设备图标或选择左侧功能即可使用</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E4%B8%8E%E4%BC%A0%E8%BE%93/" rel="tag">文件下载与传输</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-66-Bat自动提权与检测"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/blog/posts/e617b35a.html"
+    >66.Bat自动提权与检测</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/blog/posts/e617b35a.html" class="article-date">
+  <time datetime="2023-09-25T13:16:21.000Z" itemprop="datePublished">2023-09-25</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>Bat自动提权。在bat文件开头加入下面的命令则启动时会自动申请管理员权限</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">%1 start &quot;&quot; mshta vbscript:CreateObject(&quot;Shell.Application&quot;).ShellExecute(&quot;%~s0&quot;,&quot;::&quot;,&quot;%~dp0&quot;,&quot;runas&quot;,1)(window.close)&amp;&amp;exit</span><br></pre></td></tr></table></figure>
+<p>Bat管理员权限检测。下面命令加入到要检测的地方即可，如果仅检测无强制管理员要求，则改掉最后的exit命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@(cacls &quot;%SystemDrive%\System Volume Information&quot; &gt;nul 2&gt;&amp;1)||(echo 未赋予管理员权限&amp;echo.&amp;pause&amp;exit /b)</span><br></pre></td></tr></table></figure>
+<p>参考出处：<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/34541107">点击此处</a></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
   id="post-65-压缩VHD文件"
   class="article article-type-post"
   itemscope
@@ -316,123 +422,13 @@
 </article>
 
     
-    <article
-  id="post-61-为Hexo启用文章加密"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/blog/posts/691f5b25.html"
-    >61.为Hexo启用文章加密</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/blog/posts/691f5b25.html" class="article-date">
-  <time datetime="2023-09-18T16:01:00.000Z" itemprop="datePublished">2023-09-19</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>hexo-blog-encrypt的GitHub项目页：<a target="_blank" rel="noopener" href="https://github.com/D0n9X1n/hexo-blog-encrypt">点击此处</a></p>
-<p>1.安装hexo-blog-encrypt插件</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-blog-encrypt --save</span><br></pre></td></tr></table></figure>
-<p>2.修改配置文件<br>修改blog文件夹下的_config.yml，追加以下内容：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># hexo-blog-encrypt</span><br><span class="line">encrypt: </span><br><span class="line">  abstract: 该文章已加密，请输入密码后查看</span><br><span class="line">  message: 请在此处输入密码</span><br><span class="line">  wrong_pass_message: 密码不太对哦，请重新输入！</span><br></pre></td></tr></table></figure>
-<p>abstract为主页显示的加密提示语<br>message为密码输入框的提示语<br>wrong_pass_message密码输入错误的提示语<br>3.修改blog –&gt; node_modules –&gt; hexo-blog-encrypt –&gt; lib文件夹下的hbe.js(非必要步骤)<br>修改前</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">const hideButton = document.createElement(&#x27;button&#x27;);</span><br><span class="line">hideButton.textContent = &#x27;Encrypt again&#x27;;</span><br><span class="line">hideButton.type = &#x27;button&#x27;;</span><br><span class="line">hideButton.classList.add(&quot;hbe-button&quot;);</span><br></pre></td></tr></table></figure>
-<p>修改后</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">const hideButton = document.createElement(&#x27;button&#x27;);</span><br><span class="line">hideButton.textContent = &#x27;重新进行加密&#x27;;</span><br><span class="line">hideButton.type = &#x27;button&#x27;;</span><br><span class="line">hideButton.classList.add(&quot;hbe-button&quot;);</span><br></pre></td></tr></table></figure>
-<p>4.在需要加密的文章头部添加password选项</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Blog/" rel="tag">Blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Hexo/" rel="tag">Hexo</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
-    <article
-  id="post-60-为Hexo启用文章搜索功能"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/blog/posts/f7408e45.html"
-    >60.为Hexo启用文章搜索功能</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/blog/posts/f7408e45.html" class="article-date">
-  <time datetime="2023-09-14T15:50:00.000Z" itemprop="datePublished">2023-09-14</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>hexo-generator-search的GitHub项目页：<a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search">点击此处</a></p>
-<p>1.为hexo添加hexo-generator-search插件</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-search --save</span><br></pre></td></tr></table></figure>
-<p>2.修改配置文件<br>对blog文件夹下的_config.yml添加以下内容</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># hexo-generator-search</span><br><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br></pre></td></tr></table></figure> 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Blog/" rel="tag">Blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Hexo/" rel="tag">Hexo</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
   </article>
   
 
   
   <nav class="page-nav">
     
-    <a class="extend prev" rel="prev" href="/blog/page/4/">上一页</a><a class="page-number" href="/blog/">1</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/3/">3</a><a class="page-number" href="/blog/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/blog/page/6/">6</a><a class="page-number" href="/blog/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/15/">15</a><a class="extend next" rel="next" href="/blog/page/6/">下一页</a>
+    <a class="extend prev" rel="prev" href="/blog/page/4/">上一页</a><a class="page-number" href="/blog/">1</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/3/">3</a><a class="page-number" href="/blog/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/blog/page/6/">6</a><a class="page-number" href="/blog/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/16/">16</a><a class="extend next" rel="next" href="/blog/page/6/">下一页</a>
   </nav>
   
 </section>

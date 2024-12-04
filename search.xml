@@ -27,6 +27,58 @@
     
     
     <entry>
+      <title>91.EasySpider - 一个可视化浏览器自动爬虫软件</title>
+      <link href="/blog/posts/d9346d17.html"/>
+      <url>/blog/posts/d9346d17.html</url>
+      
+        <content type="html"><![CDATA[<p>Github项目页：<a href="https://github.com/NaiboWang/EasySpider">点击此处</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> Windows </tag>
+            
+            <tag> Web </tag>
+            
+            <tag> Docker </tag>
+            
+            <tag> macOS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>90.Stirling-PDF - PDF处理工具</title>
+      <link href="/blog/posts/1f2a1072.html"/>
+      <url>/blog/posts/1f2a1072.html</url>
+      
+        <content type="html"><![CDATA[<p>Github项目页：<a href="https://github.com/Stirling-Tools/Stirling-PDF">点击此处</a></p><p>一个PDF处理工具,可以在Windows上单独运行，根据Releases页面放出的程序来看，貌似是有一个本地应用程序，和一个网页应用程序。其它操作系统可以用docker部署后，浏览器访问使用。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+            <tag> Web </tag>
+            
+            <tag> Docker </tag>
+            
+            <tag> 文档处理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>88.iptv-checker - IPTV源检查工具</title>
       <link href="/blog/posts/85b76086.html"/>
       <url>/blog/posts/85b76086.html</url>

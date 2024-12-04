@@ -88,6 +88,104 @@
     
     
     <article
+  id="post-31-Windows安装助手升级与镜像下载位置"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/blog/posts/e4cf31d0.html"
+    >31.Windows安装助手升级与镜像下载位置</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/blog/posts/e4cf31d0.html" class="article-date">
+  <time datetime="2022-11-17T16:01:00.000Z" itemprop="datePublished">2022-11-18</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>安装助手如果检测配置兼容性不通过，则让程序以Win7兼容性启动方可继续升级<br>下载完成后如需提取ESD系统镜像文件，则保存地址如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\administrator\AppData\Local\Temp</span><br></pre></td></tr></table></figure> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-30-Win11升级跳过检测"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/blog/posts/32f357f1.html"
+    >30.Win11升级跳过检测</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/blog/posts/32f357f1.html" class="article-date">
+  <time datetime="2022-11-15T16:04:00.000Z" itemprop="datePublished">2022-11-16</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>1.打开Win11的ISO里的Setup，继续到检测升级不通过的界面，然后将$WINDOWS.~BT\Sources\Panther路径下的Appraiser_Data.ini清空并设置只读<br>2.点击安装程序的上一步后重新开始让安装程序检测，此时会直接通过，升级操作可以继续往下进行</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#快速选择到文件</span><br><span class="line">explorer.exe /select,&quot;%SystemDrive%\$WINDOWS.~BT\Sources\Panther\Appraiser_Data.ini&quot;</span><br></pre></td></tr></table></figure> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
   id="post-29-Win11安装跳过检测"
   class="article article-type-post"
   itemscope
@@ -298,349 +396,13 @@
 </article>
 
     
-    <article
-  id="post-25-升级Windows版本的命令(适用Win11&amp;Win10)"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/blog/posts/50231575.html"
-    >25.升级Windows版本的命令(适用Win11&amp;Win10)</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/blog/posts/50231575.html" class="article-date">
-  <time datetime="2022-11-14T16:02:00.000Z" itemprop="datePublished">2022-11-15</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>方法一：<br>使用Dism来升级，命令如下。暂未成功过，需后面再研究。<br>Dism升级方式的官方网站：<a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/windows-hardware/manufacture/desktop/dism-windows-edition-servicing-command-line-options">点击此处</a></p>
-<p>获取当前版本</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Dism /online /Get-CurrentEdition</span><br></pre></td></tr></table></figure>
-<p>获取可以升级的版本</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Dism /online /Get-TargetEditions</span><br></pre></td></tr></table></figure>
-<p>升级到专业版</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Dism /online /Set-Edition:Professional /ProductKey:VK7JG-NPHTM-C97JM-9MPGT-3V66T</span><br></pre></td></tr></table></figure>
-<p>升级到企业版</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Dism /online /Set-Edition:Enterprise /ProductKey:XGVPP-NMH47-7TTHJ-W3FW7-8HV2C</span><br></pre></td></tr></table></figure>
-<p>方法二：<br>用changepk.exe的ProductKey选项来改变Windows的当前Key。该方法等同于手动输入产品密钥使用该方法升级需要注意是否支持版本升级，如果不支持执行完成不会发生任何版本变化，具体支持情况请点击 <a href="/blog/posts/148739fa.html" title="24.Windows升级降级版本的明细表">“Windows升级降级版本的明细表”</a> 查询</p>
-<p>家庭版</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">changepk.exe /ProductKey YTMG3-N6DKC-DKB77-7M9GH-8HVX7</span><br></pre></td></tr></table></figure>
-<p>专业版</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">changepk.exe /ProductKey VK7JG-NPHTM-C97JM-9MPGT-3V66T</span><br></pre></td></tr></table></figure>
-<p>企业版</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">changepk.exe /ProductKey XGVPP-NMH47-7TTHJ-W3FW7-8HV2C</span><br></pre></td></tr></table></figure> 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
-    <article
-  id="post-24-Windows升级降级版本的明细表"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/blog/posts/148739fa.html"
-    >24.Windows升级降级版本的明细表</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/blog/posts/148739fa.html" class="article-date">
-  <time datetime="2022-11-14T16:01:00.000Z" itemprop="datePublished">2022-11-15</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>微软官方网站：<a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/windows/deployment/upgrade/windows-edition-upgrades">点击此处</a></p>
-<h3 id="升级详情"><a href="#升级详情" class="headerlink" title="升级详情"></a>升级详情</h3><table>
-<thead>
-<tr>
-<th align="left">版本</th>
-<th align="center">使用移动设备管理<br>(MDM)</th>
-<th align="center">使用预<br>配包</th>
-<th align="center">使用命令<br>行工具</th>
-<th align="center">使用适用于企业的<br>Microsoft Store或电脑</th>
-<th align="center">手动输入<br>产品密钥</th>
-<th align="center">从Microsoft Store购<br>买许可证</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">家庭版&gt;专业版</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-<td align="center">☑️</td>
-<td align="center">☑️</td>
-</tr>
-<tr>
-<td align="left">家庭版&gt;专业工作站版</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-<td align="center">☑️</td>
-<td align="center">☑️</td>
-</tr>
-<tr>
-<td align="left">家庭版&gt;专业教育版</td>
-<td align="center">☑️</td>
-<td align="center">☑️</td>
-<td align="center">☑️</td>
-<td align="center">❌</td>
-<td align="center">☑️</td>
-<td align="center">❌</td>
-</tr>
-<tr>
-<td align="left">家庭版&gt;教育版</td>
-<td align="center">☑️</td>
-<td align="center">☑️</td>
-<td align="center">☑️</td>
-<td align="center">❌</td>
-<td align="center">☑️</td>
-<td align="center">❌</td>
-</tr>
-<tr>
-<td align="left">专业版&gt;专业工作站版</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-</tr>
-<tr>
-<td align="left">专业版&gt;专业教育版</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-<td align="center">❌</td>
-</tr>
-<tr>
-<td align="left">专业版&gt;教育版</td>
-<td align="center">☑️</td>
-<td align="center">☑️</td>
-<td align="center">☑️</td>
-<td align="center">☑️</td>
-<td align="center">☑️</td>
-<td align="center">❌</td>
-</tr>
-<tr>
-<td align="left">专业版&gt;企业版</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-<td align="center">❌</td>
-</tr>
-<tr>
-<td align="left">专业工作站版&gt;专业教育版</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-<td align="center">❌</td>
-</tr>
-<tr>
-<td align="left">专业工作站版&gt;教育版</td>
-<td align="center">☑️</td>
-<td align="center">☑️</td>
-<td align="center">☑️</td>
-<td align="center">☑️</td>
-<td align="center">☑️</td>
-<td align="center">❌</td>
-</tr>
-<tr>
-<td align="left">专业工作站版&gt;企业版</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-<td align="center">❌</td>
-</tr>
-<tr>
-<td align="left">专业教育版&gt;教育版</td>
-<td align="center">☑️</td>
-<td align="center">☑️</td>
-<td align="center">☑️</td>
-<td align="center">☑️</td>
-<td align="center">☑️</td>
-<td align="center">❌</td>
-</tr>
-<tr>
-<td align="left">企业版&gt;教育版</td>
-<td align="center">☑️</td>
-<td align="center">☑️</td>
-<td align="center">☑️</td>
-<td align="center">☑️</td>
-<td align="center">☑️</td>
-<td align="center">❌</td>
-</tr>
-</tbody></table>
-<ul>
-<li>✅ &#x3D; 支持，无需重启。</li>
-<li>☑️ &#x3D; 支持，但需要重新启动。</li>
-<li>❌ &#x3D; 不支持。</li>
-</ul>
-<h3 id="降级详情"><a href="#降级详情" class="headerlink" title="降级详情"></a>降级详情</h3><table>
-<thead>
-<tr>
-<th align="left">版本</th>
-<th align="center">家庭版</th>
-<th align="center">专业版</th>
-<th align="center">专业工作站版</th>
-<th align="center">专业教育版</th>
-<th align="center">教育版</th>
-<th align="center">企业版 LTSC</th>
-<th align="center">企业版</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">家庭版</td>
-<td align="center">☑️</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-</tr>
-<tr>
-<td align="left">专业版</td>
-<td align="center">❌</td>
-<td align="center">☑️</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-</tr>
-<tr>
-<td align="left">专业工作站版</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-<td align="center">☑️</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-</tr>
-<tr>
-<td align="left">专业教育版</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-<td align="center">☑️</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-</tr>
-<tr>
-<td align="left">教育版</td>
-<td align="center">❌</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-<td align="center">☑️</td>
-<td align="center">❌</td>
-<td align="center">☑️</td>
-</tr>
-<tr>
-<td align="left">企业版 LTSC</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-<td align="center">❌</td>
-<td align="center">☑️</td>
-<td align="center">❌</td>
-</tr>
-<tr>
-<td align="left">企业版</td>
-<td align="center">❌</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-<td align="center">✅</td>
-<td align="center">☑️</td>
-<td align="center">❌</td>
-<td align="center">☑️</td>
-</tr>
-</tbody></table>
-<ul>
-<li>✅ &#x3D; 支持的降级路径。</li>
-<li>☑️ &#x3D; 不被视为降级或升级。</li>
-<li>❌ &#x3D; 不支持或不降级。</li>
-</ul>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
   </article>
   
 
   
   <nav class="page-nav">
     
-    <a class="extend prev" rel="prev" href="/blog/page/10/">上一页</a><a class="page-number" href="/blog/">1</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/9/">9</a><a class="page-number" href="/blog/page/10/">10</a><span class="page-number current">11</span><a class="page-number" href="/blog/page/12/">12</a><a class="page-number" href="/blog/page/13/">13</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/15/">15</a><a class="extend next" rel="next" href="/blog/page/12/">下一页</a>
+    <a class="extend prev" rel="prev" href="/blog/page/10/">上一页</a><a class="page-number" href="/blog/">1</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/9/">9</a><a class="page-number" href="/blog/page/10/">10</a><span class="page-number current">11</span><a class="page-number" href="/blog/page/12/">12</a><a class="page-number" href="/blog/page/13/">13</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/16/">16</a><a class="extend next" rel="next" href="/blog/page/12/">下一页</a>
   </nav>
   
 </section>

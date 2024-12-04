@@ -88,6 +88,110 @@
     
     
     <article
+  id="post-55-使用CMD命令查看Windows已保存Wifi的密码"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/blog/posts/11573e00.html"
+    >55.使用CMD命令查看Windows已保存Wifi的密码</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/blog/posts/11573e00.html" class="article-date">
+  <time datetime="2023-03-16T15:17:14.000Z" itemprop="datePublished">2023-03-16</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>查询已保存的所有Wifi名称：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netsh wlan show profile</span><br></pre></td></tr></table></figure>
+<p>根据名称显示密码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netsh wlan show profile name=&quot;名称&quot; key=clear</span><br></pre></td></tr></table></figure>
+<p>显示出来的内容中密码显示在 “安全设置” –&gt; “关键内容” 行</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-54-为Windows右键添加复制到移动到选项"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/blog/posts/4521a203.html"
+    >54.为Windows右键添加复制到移动到选项</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/blog/posts/4521a203.html" class="article-date">
+  <time datetime="2023-03-16T14:45:30.000Z" itemprop="datePublished">2023-03-16</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>添加命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reg add &quot;HKEY_CLASSES_ROOT\AllFilesystemObjects\shellex\ContextMenuHandlers\CopyTo&quot; /ve /t REG_SZ /d &quot;&#123;C2FBB630-2971-11d1-A18C-00C04FD75D13&#125;&quot; /f &amp; reg add &quot;HKEY_CLASSES_ROOT\AllFilesystemObjects\shellex\ContextMenuHandlers\MoveTo&quot; /ve /t REG_SZ /d &quot;&#123;C2FBB631-2971-11d1-A18C-00C04FD75D13&#125;&quot; /f</span><br></pre></td></tr></table></figure>
+<p>删除命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reg delete &quot;HKEY_CLASSES_ROOT\AllFilesystemObjects\shellex\ContextMenuHandlers\CopyTo&quot; /f &amp; reg delete &quot;HKEY_CLASSES_ROOT\AllFilesystemObjects\shellex\ContextMenuHandlers\MoveTo&quot; /f</span><br></pre></td></tr></table></figure> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
   id="post-53-Windows下安装Apache"
   class="article article-type-post"
   itemscope
@@ -297,115 +401,13 @@
 </article>
 
     
-    <article
-  id="post-49-Win10时钟显示秒"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/blog/posts/2dee8536.html"
-    >49.Win10时钟显示秒</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/blog/posts/2dee8536.html" class="article-date">
-  <time datetime="2023-03-11T06:52:08.000Z" itemprop="datePublished">2023-03-11</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>打开Win10时钟的秒显示</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">taskkill /F /IM explorer.exe &amp; reg add &quot;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced&quot; /v ShowSecondsInSystemClock /t REG_DWORD /d 1 /f &amp; start %windir%\explorer.exe</span><br></pre></td></tr></table></figure>
-<p>关闭Win10时钟的秒显示</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">taskkill /F /IM explorer.exe &amp; reg delete &quot;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced&quot; /v ShowSecondsInSystemClock /f &amp; start %windir%\explorer.exe</span><br></pre></td></tr></table></figure> 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
-    <article
-  id="post-48-去除桌面图标小箭头和盾牌"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/blog/posts/2e634d72.html"
-    >48.去除桌面图标小箭头和盾牌</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/blog/posts/2e634d72.html" class="article-date">
-  <time datetime="2023-03-11T06:22:39.000Z" itemprop="datePublished">2023-03-11</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>去除桌面图标小箭头和盾牌：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">taskkill /F /IM explorer.exe &amp; reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&quot; /v 29 /t REG_SZ /d %windir%\system32\imageres.dll,197 /f &amp; reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&quot; /v 77 /t REG_SZ /d %windir%\system32\imageres.dll,197 /f &amp; attrib -s -r -h %userprofile%\AppData\Local\iconcache.db &amp; del %userprofile%\AppData\Local\iconcache.db /f /q &amp; start %windir%\explorer.exe</span><br></pre></td></tr></table></figure>
-<p>重新显示桌面图标小箭头和盾牌：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">taskkill /F /IM explorer.exe &amp; reg delete &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&quot; /f &amp; attrib -s -r -h %userprofile%\AppData\Local\iconcache.db &amp; del %userprofile%\AppData\Local\iconcache.db /f /q &amp; start %windir%\explorer.exe</span><br></pre></td></tr></table></figure> 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
   </article>
   
 
   
   <nav class="page-nav">
     
-    <a class="extend prev" rel="prev" href="/blog/page/6/">上一页</a><a class="page-number" href="/blog/">1</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/5/">5</a><a class="page-number" href="/blog/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/blog/page/8/">8</a><a class="page-number" href="/blog/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/15/">15</a><a class="extend next" rel="next" href="/blog/page/8/">下一页</a>
+    <a class="extend prev" rel="prev" href="/blog/page/6/">上一页</a><a class="page-number" href="/blog/">1</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/5/">5</a><a class="page-number" href="/blog/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/blog/page/8/">8</a><a class="page-number" href="/blog/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/16/">16</a><a class="extend next" rel="next" href="/blog/page/8/">下一页</a>
   </nav>
   
 </section>
