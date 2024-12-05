@@ -4,21 +4,23 @@
   
     
     <entry>
-      <title>89.CleanFlashInstaller - 干净的Flash安装工具</title>
-      <link href="/blog/posts/5871ca3c.html"/>
-      <url>/blog/posts/5871ca3c.html</url>
+      <title>97.NextTrace与OpenTrace - 路由追踪软件</title>
+      <link href="/blog/posts/ba11d65d.html"/>
+      <url>/blog/posts/ba11d65d.html</url>
       
-        <content type="html"><![CDATA[<p>Github项目页：<a href="https://github.com/Aira-Sakuranomiya/CleanFlashInstaller">点击此处</a><br>GitLab项目页：<a href="https://gitlab.com/cleanflash/installer">点击此处</a></p><p>备注：<br>1.GitLab更新的快一点，项目源码也托管在GitLab上，不太清楚Github的项目是否和GitLab的项目是同一作者，总之优先推荐从GitLab下载使用。<br>2.Flash已被官方抛弃，如非必要情况下，不要使用Flash，非常不安全。</p>]]></content>
+        <content type="html"><![CDATA[<p>NTrace-core的Github项目页：<a href="https://github.com/nxtrace/NTrace-core">点击此处</a><br>OpenTrace的Github项目页：<a href="https://github.com/Archeb/opentrace">点击此处</a><br>NextTraceroute的Github项目页：<a href="https://github.com/nxtrace/NextTraceroute">点击此处</a></p><p>备注：<br>NTrace-core是NextTrace的稳定版本，OpenTrace是基于NextTrace的GUI项目，NextTraceroute是NextTrace的安卓版本。<br>NTrace-core仅为命令行界面，OpenTrace需要搭配NextTrace才能用并且本身不自带NextTrace，NextTraceroute不太清楚是否可以不依赖别人仅依赖自身进行路由追踪，具体情况以后测试后再更新。</p>]]></content>
       
       
       
         <tags>
             
+            <tag> 网络 </tag>
+            
+            <tag> Linux </tag>
+            
             <tag> Windows </tag>
             
-            <tag> 浏览器 </tag>
-            
-            <tag> Flash </tag>
+            <tag> macOS </tag>
             
         </tags>
       
@@ -27,7 +29,124 @@
     
     
     <entry>
-      <title>91.EasySpider - 一个可视化浏览器自动爬虫软件</title>
+      <title>96.Umi-OCR - 开源免费的离线OCR软件</title>
+      <link href="/blog/posts/d445e760.html"/>
+      <url>/blog/posts/d445e760.html</url>
+      
+        <content type="html"><![CDATA[<p>Github项目页：<a href="https://github.com/hiroi-sora/Umi-OCR">点击此处</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> Windows </tag>
+            
+            <tag> 文字处理 </tag>
+            
+            <tag> Docker </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>95.SingleFile - 网页存为单个HTML文件的插件</title>
+      <link href="/blog/posts/fe2403b2.html"/>
+      <url>/blog/posts/fe2403b2.html</url>
+      
+        <content type="html"><![CDATA[<p>Github项目页：<a href="https://github.com/gildas-lormeau/SingleFile">点击此处</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 浏览器 </tag>
+            
+            <tag> 插件 </tag>
+            
+            <tag> Web </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>94.vditor - 浏览器端的Markdown编辑器</title>
+      <link href="/blog/posts/bb51d1b4.html"/>
+      <url>/blog/posts/bb51d1b4.html</url>
+      
+        <content type="html"><![CDATA[<p>Github项目页：<a href="https://github.com/Vanessa219/vditor">点击此处</a></p><p>备注：<br>纯Web端的，不是本地客户端的那种。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Web </tag>
+            
+            <tag> 文档处理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>93.lossless-cut - 无损的视频音频剪辑软件</title>
+      <link href="/blog/posts/f0ddbf42.html"/>
+      <url>/blog/posts/f0ddbf42.html</url>
+      
+        <content type="html"><![CDATA[<p>Github项目页：<a href="https://github.com/mifi/lossless-cut">点击此处</a></p><p>备注：<br>说是无损剪辑，但是目前使用下来发现视频如果跟着关键帧来剪的话，貌似是无损，但如果不跟着关键帧来的话就好像要开智能剪辑还是什么的，剪辑效果好像也不是无损的，也就是会重新渲染。音频方面没测试过效果怎样我是说不好的。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> Windows </tag>
+            
+            <tag> 音频处理 </tag>
+            
+            <tag> 视频处理 </tag>
+            
+            <tag> macOS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>92.ContextMenuManager - Windows右键菜单管理程序</title>
+      <link href="/blog/posts/f0183b6a.html"/>
+      <url>/blog/posts/f0183b6a.html</url>
+      
+        <content type="html"><![CDATA[<p>Github项目页：<a href="https://github.com/BluePointLilac/ContextMenuManager">点击此处</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+            <tag> 管理工具 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>91.EasySpider - 可视化浏览器自动爬虫软件</title>
       <link href="/blog/posts/d9346d17.html"/>
       <url>/blog/posts/d9346d17.html</url>
       
@@ -79,6 +198,29 @@
     
     
     <entry>
+      <title>89.CleanFlashInstaller - 干净的Flash安装工具</title>
+      <link href="/blog/posts/5871ca3c.html"/>
+      <url>/blog/posts/5871ca3c.html</url>
+      
+        <content type="html"><![CDATA[<p>Github项目页：<a href="https://github.com/Aira-Sakuranomiya/CleanFlashInstaller">点击此处</a><br>GitLab项目页：<a href="https://gitlab.com/cleanflash/installer">点击此处</a></p><p>备注：<br>1.GitLab更新的快一点，项目源码也托管在GitLab上，不太清楚Github的项目是否和GitLab的项目是同一作者，总之优先推荐从GitLab下载使用。<br>2.Flash已被官方抛弃，如非必要情况下，不要使用Flash，非常不安全。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+            <tag> 浏览器 </tag>
+            
+            <tag> Flash </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>88.iptv-checker - IPTV源检查工具</title>
       <link href="/blog/posts/85b76086.html"/>
       <url>/blog/posts/85b76086.html</url>
@@ -117,7 +259,7 @@
     
     
     <entry>
-      <title>86.1Panel - 开源的 Linux 服务器运维管理面板</title>
+      <title>86.1Panel - 开源的Linux服务器运维管理面板</title>
       <link href="/blog/posts/c2a491c0.html"/>
       <url>/blog/posts/c2a491c0.html</url>
       
@@ -184,7 +326,7 @@
     
     
     <entry>
-      <title>83.Global Speed - 浏览器音频视频处理插件</title>
+      <title>83.Global Speed - 音频视频处理插件</title>
       <link href="/blog/posts/85d0fb82.html"/>
       <url>/blog/posts/85d0fb82.html</url>
       
@@ -209,7 +351,7 @@
     
     
     <entry>
-      <title>82.AdGuard - 浏览器广告拦截插件</title>
+      <title>82.AdGuard - 广告拦截插件</title>
       <link href="/blog/posts/9b4ab63c.html"/>
       <url>/blog/posts/9b4ab63c.html</url>
       
@@ -232,7 +374,7 @@
     
     
     <entry>
-      <title>81.Adblock Plus - 浏览器广告拦截插件</title>
+      <title>81.Adblock Plus - 广告拦截插件</title>
       <link href="/blog/posts/a728e7db.html"/>
       <url>/blog/posts/a728e7db.html</url>
       
@@ -438,7 +580,7 @@
     
     
     <entry>
-      <title>71.SwitchyOmega - 浏览器代理管理插件</title>
+      <title>71.SwitchyOmega - 代理管理插件</title>
       <link href="/blog/posts/8abe9cdc.html"/>
       <url>/blog/posts/8abe9cdc.html</url>
       
@@ -448,7 +590,7 @@
       
         <tags>
             
-            <tag> 科学上网 </tag>
+            <tag> 网络 </tag>
             
             <tag> 浏览器 </tag>
             
@@ -1789,7 +1931,7 @@
             
             <tag> V2ray </tag>
             
-            <tag> 科学上网 </tag>
+            <tag> 网络 </tag>
             
         </tags>
       
@@ -1810,7 +1952,7 @@
             
             <tag> V2ray </tag>
             
-            <tag> 科学上网 </tag>
+            <tag> 网络 </tag>
             
         </tags>
       
