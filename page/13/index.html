@@ -88,6 +88,166 @@
     
     
     <article
+  id="post-28-跳过Win11的OOBE账号登录注册"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/blog/posts/51cec15a.html"
+    >28.跳过Win11的OOBE账号登录注册</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/blog/posts/51cec15a.html" class="article-date">
+  <time datetime="2022-11-15T16:02:00.000Z" itemprop="datePublished">2022-11-16</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>操作过程不要连接网线或Wifi，否则可能无法成功跳过</p>
+<p>在OOBE出现时按下Shift+F10调出cmd，用cmd输入下方命令添加一个注册表，此时OOBE到设置网络时会出现一个我没有网络连接选项，点击即可跳过微软账号的登录注册，使用本地账号。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE&quot; /v BypassNRO /t REG_DWORD /d 1 /f</span><br></pre></td></tr></table></figure> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-27-添加修改Windows电源方案"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/blog/posts/f4e38c3b.html"
+    >27.添加修改Windows电源方案</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/blog/posts/f4e38c3b.html" class="article-date">
+  <time datetime="2022-11-15T16:01:00.000Z" itemprop="datePublished">2022-11-16</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>电源方案标准GUID：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a1841308-3541-4fab-bc81-f71556f20b4a  (节能)</span><br><span class="line">381b4222-f694-41f0-9685-ff5bb260df2e  (平衡)</span><br><span class="line">8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c  (高性能)</span><br><span class="line">e9a42b02-d5df-448d-aa00-03f14749eb61  (卓越性能)</span><br></pre></td></tr></table></figure>
+<p>列出所有电源方案</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">powercfg /list</span><br></pre></td></tr></table></figure>
+<p>使某个电源方案在系统上处于活动状态</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">powercfg /setactive</span><br></pre></td></tr></table></figure>
+<p>复制电源方案。选项后跟电源方案的GUID</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">powercfg /duplicatescheme</span><br></pre></td></tr></table></figure>
+<p>更多详细命令请官网查看：<a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/windows-hardware/design/device-experiences/powercfg-command-line-options">点击此处</a></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-26-修改文件(夹)的创建修改日期"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/blog/posts/83b82704.html"
+    >26.修改文件(夹)的创建修改日期</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/blog/posts/83b82704.html" class="article-date">
+  <time datetime="2022-11-14T16:03:00.000Z" itemprop="datePublished">2022-11-15</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>创建时间</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(Get-Item -Path &quot;C:\Test.txt&quot;).CreationTime=(&quot;01/01/2000 00:00:00&quot;)</span><br></pre></td></tr></table></figure>
+<p>修改时间</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(Get-Item -Path &quot;C:\Test.txt&quot;).LastWriteTime=(&quot;01/01/2000 00:00:00&quot;)</span><br></pre></td></tr></table></figure>
+<p>访问时间</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(Get-Item -Path &quot;C:\Test.txt&quot;).LastAccessTime=(&quot;01/01/2000 00:00:00&quot;)</span><br></pre></td></tr></table></figure> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
   id="post-25-升级Windows版本的命令(适用Win11&amp;Win10)"
   class="article article-type-post"
   itemscope
@@ -456,158 +616,6 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Dism /online /Cleanup-Image /StartComponentCleanup</span><br></pre></td></tr></table></figure>
 <p>在 Windows 10 或更高版本的运行版本中，将 &#x2F;ResetBase 参数和 DISM.exe 的 &#x2F;StartComponentCleanup 参数一起使用，将删除组件存储区中每个组件的所有替换版本。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Dism /online /Cleanup-Image /StartComponentCleanup /ResetBase</span><br></pre></td></tr></table></figure> 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
-    <article
-  id="post-22-安装Microsoft Visual C++ Redistributable"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/blog/posts/991f594f.html"
-    >22.安装Microsoft Visual C++ Redistributable</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/blog/posts/991f594f.html" class="article-date">
-  <time datetime="2022-11-12T16:03:00.000Z" itemprop="datePublished">2022-11-13</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>微软官方网站：<a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-CN/cpp/windows/latest-supported-vc-redist?view=msvc-170">点击此处</a></p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
-    <article
-  id="post-21-把CMD设置为英文显示"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/blog/posts/df200f8d.html"
-    >21.把CMD设置为英文显示</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/blog/posts/df200f8d.html" class="article-date">
-  <time datetime="2022-11-12T16:02:00.000Z" itemprop="datePublished">2022-11-13</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>chcp 65001</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
-    <article
-  id="post-20-遍历复制所有特定文件"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/blog/posts/4015c911.html"
-    >20.遍历复制所有特定文件</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/blog/posts/4015c911.html" class="article-date">
-  <time datetime="2022-11-12T16:01:00.000Z" itemprop="datePublished">2022-11-13</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>用法举例：</p>
-<ul>
-<li>指定后缀。举例：(<em>.</em>)改为(*.pdf)</li>
-<li>指定名称。举例：(<em>.</em>)改为(举例*.*)<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">for /R %a in (*.*) do (copy &quot;%a&quot; &quot;C:\&quot; )</span><br></pre></td></tr></table></figure></li>
-</ul>
-<p>由于权限问题，BAT文件获取的目录可能不对或无操作权限，请优先使用CMD执行<br>用于CMD窗口时请先cd到操作目录<br>用于BAT文件时请将%a改为%%a，并将BAT文件移动至操作目录再执行BAT</p>
- 
       <!-- reward -->
       
     </div>
