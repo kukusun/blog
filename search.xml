@@ -4,6 +4,69 @@
   
     
     <entry>
+      <title>103.ChineseSubtitleConversionTool - 繁体简体字幕转换软件</title>
+      <link href="/blog/posts/953e6eec.html"/>
+      <url>/blog/posts/953e6eec.html</url>
+      
+        <content type="html"><![CDATA[<p>Github项目页：<a href="https://github.com/xiaoxinpro/ChineseSubtitleConversionTool">点击此处</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+            <tag> 文字处理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>102.KeymouseGo - 鼠标键盘录制和自动化操作的软件</title>
+      <link href="/blog/posts/a1047234.html"/>
+      <url>/blog/posts/a1047234.html</url>
+      
+        <content type="html"><![CDATA[<p>Github项目页：<a href="https://github.com/taojy123/KeymouseGo">点击此处</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> Windows </tag>
+            
+            <tag> macOS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>101.Carnac - 实时显示键盘操作的软件</title>
+      <link href="/blog/posts/349b90cb.html"/>
+      <url>/blog/posts/349b90cb.html</url>
+      
+        <content type="html"><![CDATA[<p>Github项目页：<a href="https://github.com/Code52/carnac">点击此处</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>100.Optimizer - Windows系统优化软件</title>
       <link href="/blog/posts/240988d5.html"/>
       <url>/blog/posts/240988d5.html</url>
@@ -39,9 +102,9 @@
             
             <tag> Windows </tag>
             
-            <tag> 文件下载与传输 </tag>
-            
             <tag> macOS </tag>
+            
+            <tag> 文件下载与传输 </tag>
             
             <tag> Android </tag>
             
@@ -54,7 +117,7 @@
     
     
     <entry>
-      <title>98.RustDesk - 远程桌面应用程序</title>
+      <title>98.RustDesk - 远程桌面软件</title>
       <link href="/blog/posts/bb84d496.html"/>
       <url>/blog/posts/bb84d496.html</url>
       
@@ -189,11 +252,11 @@
             
             <tag> Windows </tag>
             
+            <tag> macOS </tag>
+            
             <tag> 音频处理 </tag>
             
             <tag> 视频处理 </tag>
-            
-            <tag> macOS </tag>
             
         </tags>
       
@@ -202,7 +265,7 @@
     
     
     <entry>
-      <title>92.ContextMenuManager - Windows右键菜单管理程序</title>
+      <title>92.ContextMenuManager - Windows右键菜单管理软件</title>
       <link href="/blog/posts/f0183b6a.html"/>
       <url>/blog/posts/f0183b6a.html</url>
       
@@ -223,7 +286,7 @@
     
     
     <entry>
-      <title>91.EasySpider - 可视化浏览器自动爬虫程序</title>
+      <title>91.EasySpider - 可视化浏览器自动爬虫软件</title>
       <link href="/blog/posts/d9346d17.html"/>
       <url>/blog/posts/d9346d17.html</url>
       
@@ -237,11 +300,11 @@
             
             <tag> Windows </tag>
             
-            <tag> Web </tag>
+            <tag> macOS </tag>
             
             <tag> Docker </tag>
             
-            <tag> macOS </tag>
+            <tag> Web </tag>
             
         </tags>
       
@@ -250,7 +313,7 @@
     
     
     <entry>
-      <title>90.Stirling-PDF - PDF处理工具</title>
+      <title>90.Stirling-PDF - PDF处理软件</title>
       <link href="/blog/posts/1f2a1072.html"/>
       <url>/blog/posts/1f2a1072.html</url>
       
@@ -262,9 +325,9 @@
             
             <tag> Windows </tag>
             
-            <tag> Web </tag>
-            
             <tag> Docker </tag>
+            
+            <tag> Web </tag>
             
             <tag> 文档处理 </tag>
             
@@ -275,11 +338,11 @@
     
     
     <entry>
-      <title>89.CleanFlashInstaller - 干净的Flash安装工具</title>
+      <title>89.CleanFlashInstaller - 干净的Flash安装软件</title>
       <link href="/blog/posts/5871ca3c.html"/>
       <url>/blog/posts/5871ca3c.html</url>
       
-        <content type="html"><![CDATA[<p>Github项目页：<a href="https://github.com/Aira-Sakuranomiya/CleanFlashInstaller">点击此处</a><br>GitLab项目页：<a href="https://gitlab.com/cleanflash/installer">点击此处</a></p><p>备注：<br>1.GitLab更新的快一点，项目源码也托管在GitLab上，不太清楚Github的项目是否和GitLab的项目是同一作者，总之优先推荐从GitLab下载使用。<br>2.Flash已被官方抛弃，如非必要情况下，不要使用Flash，非常不安全。</p>]]></content>
+        <content type="html"><![CDATA[<p>Github项目页：<a href="https://github.com/Aira-Sakuranomiya/CleanFlashInstaller">点击此处</a><br>GitLab项目页：<a href="https://gitlab.com/cleanflash/installer">点击此处</a></p><p>备注：<br>1.GitLab更新的快一点，项目源码也托管在GitLab上，不太清楚Github的项目是否和GitLab的项目是同一作者，总之优先推荐从GitLab下载使用。<br>2.Flash已被官方抛弃，如非必要情况下，不要安装和使用Flash，非常不安全。</p>]]></content>
       
       
       
@@ -298,7 +361,7 @@
     
     
     <entry>
-      <title>88.iptv-checker - IPTV源检查工具</title>
+      <title>88.iptv-checker - 检查IPTV源的软件</title>
       <link href="/blog/posts/85b76086.html"/>
       <url>/blog/posts/85b76086.html</url>
       
@@ -308,7 +371,13 @@
       
         <tags>
             
+            <tag> Windows </tag>
+            
+            <tag> macOS </tag>
+            
             <tag> IPTV </tag>
+            
+            <tag> Docker </tag>
             
         </tags>
       
@@ -317,15 +386,19 @@
     
     
     <entry>
-      <title>87.imewlconverter - 开源输入法词库转换程序</title>
+      <title>87.imewlconverter - 开源输入法词库转换软件</title>
       <link href="/blog/posts/6e92f57d.html"/>
       <url>/blog/posts/6e92f57d.html</url>
       
-        <content type="html"><![CDATA[<p>Github项目页：<a href="https://github.com/studyzy/imewlconverter">点击此处</a></p>]]></content>
+        <content type="html"><![CDATA[<p>Github项目页：<a href="https://github.com/studyzy/imewlconverter">点击此处</a></p><p>备注：<br>macOS貌似只能以终端命令行的方式调用，非常不方便，如果有条件请选择Windows版本。</p>]]></content>
       
       
       
         <tags>
+            
+            <tag> Windows </tag>
+            
+            <tag> macOS </tag>
             
             <tag> 文字处理 </tag>
             
