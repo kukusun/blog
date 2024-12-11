@@ -302,9 +302,9 @@
             
             <tag> macOS </tag>
             
-            <tag> Docker </tag>
-            
             <tag> Web </tag>
+            
+            <tag> Docker </tag>
             
         </tags>
       
@@ -325,9 +325,9 @@
             
             <tag> Windows </tag>
             
-            <tag> Docker </tag>
-            
             <tag> Web </tag>
+            
+            <tag> Docker </tag>
             
             <tag> 文档处理 </tag>
             
@@ -1463,7 +1463,7 @@
       <link href="/blog/posts/5250c6c6.html"/>
       <url>/blog/posts/5250c6c6.html</url>
       
-        <content type="html"><![CDATA[<h2 id="Edge浏览器Chrome浏览器-国内官网链接相同，只需把com换成cn-32位-64位"><a href="#Edge浏览器Chrome浏览器-国内官网链接相同，只需把com换成cn-32位-64位" class="headerlink" title="Edge浏览器Chrome浏览器(国内官网链接相同，只需把com换成cn)- 32位- 64位"></a>Edge浏览器<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.microsoft.com/zh-cn/edge/business</span><br></pre></td></tr></table></figure><br>Chrome浏览器(国内官网链接相同，只需把com换成cn)<br>- 32位<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.google.com/intl/zh-CN/chrome/?standalone=1&amp;platform=win</span><br></pre></td></tr></table></figure><br>- 64位<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.google.com/intl/zh-CN/chrome/?standalone=1&amp;platform=win64</span><br></pre></td></tr></table></figure></h2><p>Win7&amp;Win8最后可用版存放地址：<br><a href="https://pan.baidu.com/s/1cSkNVFOS4pi6XesaRFUwyQ">https://pan.baidu.com/s/1cSkNVFOS4pi6XesaRFUwyQ</a><br>密码：e63h</p><ul><li>找到“浏览器(Win7&amp;8最新版)”文件夹</li><li>Chrome开头为谷歌Chrome浏览器，Edge开头为Microsoft Edge浏览器</li><li>x86表示为32位版本，x64为64位版本</li><li>Edge浏览器保留了一份企业版(文件名带Enterprise)，虽然没用出来企业不企业有什么差别，但还是选择保留了一份</li></ul>]]></content>
+        <content type="html"><![CDATA[<p>Edge浏览器</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.microsoft.com/zh-cn/edge/business</span><br></pre></td></tr></table></figure><p>Chrome浏览器(国内官网链接相同，只需把com换成cn)</p><ul><li>32位<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.google.com/intl/zh-CN/chrome/?standalone=1&amp;platform=win</span><br></pre></td></tr></table></figure></li><li>64位<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.google.com/intl/zh-CN/chrome/?standalone=1&amp;platform=win64</span><br></pre></td></tr></table></figure></li></ul><p>Win7&amp;Win8最后可用版存放地址：<br><a href="https://pan.baidu.com/s/1cSkNVFOS4pi6XesaRFUwyQ">https://pan.baidu.com/s/1cSkNVFOS4pi6XesaRFUwyQ</a><br>密码：e63h</p><ul><li>找到“浏览器(Win7&amp;8最新版)”文件夹</li><li>Chrome开头为谷歌Chrome浏览器，Edge开头为Microsoft Edge浏览器</li><li>x86表示为32位版本，x64为64位版本</li><li>Edge浏览器保留了一份企业版(文件名带Enterprise)，虽然没用出来企业不企业有什么差别，但还是选择保留了一份</li></ul>]]></content>
       
       
       
@@ -1482,7 +1482,7 @@
       <link href="/blog/posts/8ee0dcda.html"/>
       <url>/blog/posts/8ee0dcda.html</url>
       
-        <content type="html"><![CDATA[<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">网站1</span><br><span class="line">http://tonkiang.us</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">网站2(不太好用)</span><br><span class="line">https://iptv-org.github.io</span><br><span class="line">Github项目:</span><br><span class="line">https://github.com/iptv-org/iptv</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">网站3</span><br><span class="line">https://github.com/fanmingming/live</span><br><span class="line">https://live.fanmingming.com/tv/m3u/ipv6.m3u</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">网站1</span><br><span class="line">https://tonkiang.us</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">网站2(不太好用)</span><br><span class="line">https://iptv-org.github.io</span><br><span class="line">Github项目:</span><br><span class="line">https://github.com/iptv-org/iptv</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">网站3</span><br><span class="line">https://github.com/fanmingming/live</span><br><span class="line">https://live.fanmingming.com/tv/m3u/ipv6.m3u</span><br></pre></td></tr></table></figure>]]></content>
       
       
       
