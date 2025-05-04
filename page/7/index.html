@@ -88,7 +88,107 @@
     
     
     <article
-  id="post-67-文件传输工具汇总"
+  id="post-69-关闭Windows搜索的网络搜索功能"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/blog/posts/ba804d4.html"
+    >69.关闭Windows搜索的网络搜索功能</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/blog/posts/ba804d4.html" class="article-date">
+  <time datetime="2023-09-26T04:08:00.000Z" itemprop="datePublished">2023-09-26</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>Win10&#x2F;11搜索功能中会带有网络搜索，有时会影响搜索结果，下面命令可关闭该功能，重启后生效</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reg add &quot;HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\explorer&quot; /v DisableSearchBoxSuggestions /t REG_DWORD /d 1 /f</span><br></pre></td></tr></table></figure> 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-68-设置Windows暂停更新时间"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/blog/posts/93a404b.html"
+    >68.设置Windows暂停更新时间</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/blog/posts/93a404b.html" class="article-date">
+  <time datetime="2023-09-26T04:02:06.000Z" itemprop="datePublished">2023-09-26</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>更改天数需修改3000为想要的时间，单位是天</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings&quot; /v FlightSettingsMaxPauseDays /t REG_DWORD /d 3000 /f</span><br></pre></td></tr></table></figure>
+<p>执行完后在Windows更新页面设置暂停时间即可</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Windows/" rel="tag">Windows</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-67-snapdrop - 文件传输工具"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -100,7 +200,7 @@
        
 <h2 itemprop="name">
   <a class="article-title" href="/blog/posts/d2726044.html"
-    >67.文件传输工具汇总</a> 
+    >67.snapdrop - 文件传输工具</a> 
 </h2>
  
 
@@ -115,9 +215,7 @@
       
     <div class="article-entry" itemprop="articleBody">
        
-  <p>1.snapdrop (仅限局域网)<br>snapdrop官方网站：<a target="_blank" rel="noopener" href="https://snapdrop.net/">点击此处</a><br>snapdrop的GitHub项目页：<a target="_blank" rel="noopener" href="https://github.com/RobinLinus/snapdrop">点击此处</a><br>网页加载完成后即可发现对方设备，单击对方设备选择文件完成文件传输<br>注意：目前该项目的在线版使用上已经不是很方便了，自搭建的版本怎样还不太清楚，如果需要临时使用建议换用较为相似的PairDrop</p>
-<p>2.piping (貌似是通过服务器中转传输，可能效果和速度比较不好)<br>piping官方网站：<a target="_blank" rel="noopener" href="https://piping-ui.org/">点击此处</a><br>选择要上传的文件后双方输入同样的Secret path即可进行文件或文本传输<br>piping-server的GitHub项目页：<a target="_blank" rel="noopener" href="https://github.com/nwtgck/piping-server">点击此处</a></p>
-<p>3.transfer (.zip域名，比较旧的浏览器可能无法正确访问)<br>transfer官方网站：<a target="_blank" rel="noopener" href="https://transfer.zip/">点击此处</a><br>选择文件点击send后会跳出二维码，扫码或复制访问链接即可进行文件传输<br>transfer的GitHub项目页：<a target="_blank" rel="noopener" href="https://github.com/robinkarlberg/transfer.zip-web">点击此处</a></p>
+  <p>snapdrop官方网站：<a target="_blank" rel="noopener" href="https://snapdrop.net/">点击此处</a><br>snapdrop的GitHub项目页：<a target="_blank" rel="noopener" href="https://github.com/RobinLinus/snapdrop">点击此处</a><br>使用方法：仅限局域网传输，网页加载完成后即可发现对方设备，单击对方设备选择文件完成文件传输。<br>注意事项：目前该项目的在线版使用上已经不是很方便了，自搭建的版本怎样还不太清楚，如果需要临时使用建议换用较为相似的PairDrop</p>
 <p>4.deershare (小鹿快传)<br>deershare官方网站：<a target="_blank" rel="noopener" href="https://deershare.com/">点击此处</a><br>选择好要上传文件后会出现收件码，接收端选择接收页面并填入收件码即可<br>deershare的GitHub项目页：<a target="_blank" rel="noopener" href="https://github.com/fanchangyong/deershare">点击此处</a></p>
 <p>5.PP直连<br>PP直连官方网站：<a target="_blank" rel="noopener" href="https://www.ppzhilian.com/">点击此处</a><br>选择右侧的连接方式，通过账号、局域网、临时网址或短码进行互联<br>连接完成后点击设备图标或选择左侧功能即可使用</p>
  
@@ -277,132 +375,6 @@
         >阅读更多...</a
       >
        
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Blog/" rel="tag">Blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Hexo/" rel="tag">Hexo</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
-    <article
-  id="post-63-将Hexo推送至Github Pages"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/blog/posts/e0632775.html"
-    >63.将Hexo推送至Github Pages</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/blog/posts/e0632775.html" class="article-date">
-  <time datetime="2023-09-18T16:03:00.000Z" itemprop="datePublished">2023-09-19</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>hexo-deployer-git的GitHub项目页：<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-deployer-git">点击此处</a></p>
-<p>1.安装hexo-deployer-git插件</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p>2.修改blog文件夹下的_config.yml<br>修改前：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: &#x27;&#x27;</span><br></pre></td></tr></table></figure>
-<p>修改后：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/kukusun/kukusun.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<p>3.推送至Github Pages<br>在自己的GitHub帐号中创建一个repository，名称为：用户名.github.io<br>设置git的邮箱与名称，以前设置过就无需再次设置</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email &quot;you@example.com&quot;</span><br><span class="line">git config --global user.name &quot;Your Name&quot;</span><br></pre></td></tr></table></figure>
-<p>用命令推送：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>此时可能需要设置GitHub帐号的登陆，可以直接登录，也可以用token方式推送Blog<br>如果选择用token方式则<a target="_blank" rel="noopener" href="https://github.com/settings/tokens">点击此处</a>跳转token管理界面<br>token创建步骤</p>
-<ul>
-<li>右上角Generate new token处选择Generate new token (classic)</li>
-<li>Note写入自定义的名称</li>
-<li>Expiration设置过期时间</li>
-<li>Select scopes中将repo栏中的选项全部勾选</li>
-</ul>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Blog/" rel="tag">Blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Hexo/" rel="tag">Hexo</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
-    <article
-  id="post-62-为Hexo文章生成永久固定链接"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/blog/posts/716af117.html"
-    >62.为Hexo文章生成永久固定链接</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/blog/posts/716af117.html" class="article-date">
-  <time datetime="2023-09-18T16:02:00.000Z" itemprop="datePublished">2023-09-19</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>hexo-abbrlink的GitHub项目页：<a target="_blank" rel="noopener" href="https://github.com/rozbo/hexo-abbrlink">点击此处</a></p>
-<p>1.安装hexo-abbrlink插件</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
-<p>2.修改blog文件夹下的_config.yml<br>修改前：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># URL</span><br><span class="line">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span><br><span class="line">url: http://example.com</span><br><span class="line">permalink: :year/:month/:day/:title/</span><br><span class="line">permalink_defaults:</span><br><span class="line">pretty_urls:</span><br><span class="line">  trailing_index: true # Set to false to remove trailing &#x27;index.html&#x27; from permalinks</span><br><span class="line">  trailing_html: true # Set to false to remove trailing &#x27;.html&#x27; from permalinks</span><br></pre></td></tr></table></figure>
-<p>修改后：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># URL</span><br><span class="line">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span><br><span class="line">url: http://example.com</span><br><span class="line">#permalink: :year/:month/:day/:title/</span><br><span class="line">permalink: posts/:abbrlink.html</span><br><span class="line">abbrlink:</span><br><span class="line">    alg: crc32   #算法： crc16(default) and crc32</span><br><span class="line">    rep: hex     #进制： dec(default) and hex</span><br><span class="line">permalink_defaults:</span><br><span class="line">pretty_urls:</span><br><span class="line">  trailing_index: true # Set to false to remove trailing &#x27;index.html&#x27; from permalinks</span><br><span class="line">  trailing_html: true # Set to false to remove trailing &#x27;.html&#x27; from permalinks</span><br></pre></td></tr></table></figure>
-<p>3.修改blog –&gt; node_modules –&gt; hexo-asset-image文件夹下的index.js<br>修改前：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">if(/.*\/index\.html$/.test(link)) &#123;</span><br><span class="line">  // when permalink is end with index.html, for example 2019/02/20/xxtitle/index.html</span><br><span class="line">  // image in xxtitle/ will go to xxtitle/index/</span><br><span class="line">  appendLink = &#x27;index/&#x27;;</span><br><span class="line">  var endPos = link.lastIndexOf(&#x27;/&#x27;);</span><br><span class="line">&#125;</span><br><span class="line">else &#123;</span><br><span class="line">  var endPos = link.length-1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>修改后：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">if(/.*\/index\.html$/.test(link)) &#123;</span><br><span class="line">  // when permalink is end with index.html, for example 2019/02/20/xxtitle/index.html</span><br><span class="line">  // image in xxtitle/ will go to xxtitle/index/</span><br><span class="line">  appendLink = &#x27;index/&#x27;;</span><br><span class="line">  var endPos = link.lastIndexOf(&#x27;/&#x27;);</span><br><span class="line">&#125;</span><br><span class="line">else &#123;</span><br><span class="line">  var endPos = link.length-5;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>参考出处：<a target="_blank" rel="noopener" href="https://blog.csdn.net/Copanko/article/details/105428249">点击此处</a></p>
- 
       <!-- reward -->
       
     </div>

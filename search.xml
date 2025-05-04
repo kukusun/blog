@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>105.transfer - 文件传输工具</title>
+      <link href="/blog/posts/7c3fda67.html"/>
+      <url>/blog/posts/7c3fda67.html</url>
+      
+        <content type="html"><![CDATA[<p>transfer官方网站：<a href="https://transfer.zip/">点击此处</a><br>transfer的GitHub项目页：<a href="https://github.com/robinkarlberg/transfer.zip-web">点击此处</a><br>使用方法：选择文件点击send后会跳出二维码，扫码或复制访问链接即可进行文件传输。<br>注意事项：.zip域名，比较旧的浏览器可能无法正确访问</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 文件下载与传输 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>104.piping - 文件传输工具</title>
+      <link href="/blog/posts/9430a39b.html"/>
+      <url>/blog/posts/9430a39b.html</url>
+      
+        <content type="html"><![CDATA[<p>piping官方网站：<a href="https://piping-ui.org/">点击此处</a><br>piping-server的GitHub项目页：<a href="https://github.com/nwtgck/piping-server">点击此处</a><br>使用方法：仅限公网传输。选择要上传的文件后双方输入同样的Secret path即可进行文件或文本传输。<br>注意：这个工具是通过服务器中转传输，可能效果和速度比较不好。但是需要公网小文件传输的话还是可以临时凑合用一下。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 文件下载与传输 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>103.ChineseSubtitleConversionTool - 繁体简体字幕转换软件</title>
       <link href="/blog/posts/953e6eec.html"/>
       <url>/blog/posts/953e6eec.html</url>
@@ -35,9 +73,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Windows </tag>
+            
+            <tag> Linux </tag>
             
             <tag> macOS </tag>
             
@@ -98,9 +136,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Windows </tag>
+            
+            <tag> Linux </tag>
             
             <tag> macOS </tag>
             
@@ -127,9 +165,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Windows </tag>
+            
+            <tag> Linux </tag>
             
             <tag> macOS </tag>
             
@@ -156,9 +194,9 @@
             
             <tag> 网络 </tag>
             
-            <tag> Linux </tag>
-            
             <tag> Windows </tag>
+            
+            <tag> Linux </tag>
             
             <tag> macOS </tag>
             
@@ -179,9 +217,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Windows </tag>
+            
+            <tag> Linux </tag>
             
             <tag> 文字处理 </tag>
             
@@ -248,9 +286,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Windows </tag>
+            
+            <tag> Linux </tag>
             
             <tag> macOS </tag>
             
@@ -296,9 +334,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Windows </tag>
+            
+            <tag> Linux </tag>
             
             <tag> macOS </tag>
             
@@ -810,11 +848,11 @@
     
     
     <entry>
-      <title>67.文件传输工具汇总</title>
+      <title>67.snapdrop - 文件传输工具</title>
       <link href="/blog/posts/d2726044.html"/>
       <url>/blog/posts/d2726044.html</url>
       
-        <content type="html"><![CDATA[<p>1.snapdrop (仅限局域网)<br>snapdrop官方网站：<a href="https://snapdrop.net/">点击此处</a><br>snapdrop的GitHub项目页：<a href="https://github.com/RobinLinus/snapdrop">点击此处</a><br>网页加载完成后即可发现对方设备，单击对方设备选择文件完成文件传输<br>注意：目前该项目的在线版使用上已经不是很方便了，自搭建的版本怎样还不太清楚，如果需要临时使用建议换用较为相似的PairDrop</p><p>2.piping (貌似是通过服务器中转传输，可能效果和速度比较不好)<br>piping官方网站：<a href="https://piping-ui.org/">点击此处</a><br>选择要上传的文件后双方输入同样的Secret path即可进行文件或文本传输<br>piping-server的GitHub项目页：<a href="https://github.com/nwtgck/piping-server">点击此处</a></p><p>3.transfer (.zip域名，比较旧的浏览器可能无法正确访问)<br>transfer官方网站：<a href="https://transfer.zip/">点击此处</a><br>选择文件点击send后会跳出二维码，扫码或复制访问链接即可进行文件传输<br>transfer的GitHub项目页：<a href="https://github.com/robinkarlberg/transfer.zip-web">点击此处</a></p><p>4.deershare (小鹿快传)<br>deershare官方网站：<a href="https://deershare.com/">点击此处</a><br>选择好要上传文件后会出现收件码，接收端选择接收页面并填入收件码即可<br>deershare的GitHub项目页：<a href="https://github.com/fanchangyong/deershare">点击此处</a></p><p>5.PP直连<br>PP直连官方网站：<a href="https://www.ppzhilian.com/">点击此处</a><br>选择右侧的连接方式，通过账号、局域网、临时网址或短码进行互联<br>连接完成后点击设备图标或选择左侧功能即可使用</p>]]></content>
+        <content type="html"><![CDATA[<p>snapdrop官方网站：<a href="https://snapdrop.net/">点击此处</a><br>snapdrop的GitHub项目页：<a href="https://github.com/RobinLinus/snapdrop">点击此处</a><br>使用方法：仅限局域网传输，网页加载完成后即可发现对方设备，单击对方设备选择文件完成文件传输。<br>注意事项：目前该项目的在线版使用上已经不是很方便了，自搭建的版本怎样还不太清楚，如果需要临时使用建议换用较为相似的PairDrop</p><p>4.deershare (小鹿快传)<br>deershare官方网站：<a href="https://deershare.com/">点击此处</a><br>选择好要上传文件后会出现收件码，接收端选择接收页面并填入收件码即可<br>deershare的GitHub项目页：<a href="https://github.com/fanchangyong/deershare">点击此处</a></p><p>5.PP直连<br>PP直连官方网站：<a href="https://www.ppzhilian.com/">点击此处</a><br>选择右侧的连接方式，通过账号、局域网、临时网址或短码进行互联<br>连接完成后点击设备图标或选择左侧功能即可使用</p>]]></content>
       
       
       

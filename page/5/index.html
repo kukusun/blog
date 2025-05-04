@@ -88,6 +88,110 @@
     
     
     <article
+  id="post-81-Adblock Plus - 广告拦截插件"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/blog/posts/a728e7db.html"
+    >81.Adblock Plus - 广告拦截插件</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/blog/posts/a728e7db.html" class="article-date">
+  <time datetime="2024-10-13T07:20:00.000Z" itemprop="datePublished">2024-10-13</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>官方网站：<a target="_blank" rel="noopener" href="https://adblockplus.org/zh_CN">点击此处</a></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/%E5%B9%BF%E5%91%8A%E6%8B%A6%E6%88%AA/" rel="tag">广告拦截</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/%E6%8F%92%E4%BB%B6/" rel="tag">插件</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/" rel="tag">浏览器</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
+  id="post-80-将Hexo博客迁移到子目录下"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/blog/posts/f9d3585f.html"
+    >80.将Hexo博客迁移到子目录下</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/blog/posts/f9d3585f.html" class="article-date">
+  <time datetime="2024-10-11T16:00:40.000Z" itemprop="datePublished">2024-10-12</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h3 id="1-hexo配置文件"><a href="#1-hexo配置文件" class="headerlink" title="1.hexo配置文件"></a>1.hexo配置文件</h3><p>如果url设置为<code>https://username.github.io</code>，那么root可以不要。<br>如果url设置为子目录，那么要加入root并将值设置为子目录。<br>例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">不在子目录的例子</span><br><span class="line"># URL</span><br><span class="line">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span><br><span class="line">url: https://username.github.io/blog</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">在一级子目录的例子</span><br><span class="line"># URL</span><br><span class="line">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span><br><span class="line">url: https://username.github.io/blog</span><br><span class="line">root: /blog/</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">在多级子目录的例子</span><br><span class="line"># URL</span><br><span class="line">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span><br><span class="line">url: https://username.github.io/blog/1122/abab</span><br><span class="line">root: /blog/1122/abab/</span><br></pre></td></tr></table></figure>
+<h3 id="2-ayer主题配置文件"><a href="#2-ayer主题配置文件" class="headerlink" title="2.ayer主题配置文件"></a>2.ayer主题配置文件</h3><p>主题封面(cover)在切换url后路径不会跟着变，需要在ayer主题配置文件中修改<code>path: /images/cover.jpg</code>为<code>path: /blog/images/cover.jpg</code>。<br>同理，favicon、logo和鼠标的path: &#x2F;images&#x2F;mouse.cur等等应该都需要改，如果确实是启用了的话，没启用改不改应该影响不大</p>
+<h3 id="3-ayer主题js和css文件"><a href="#3-ayer主题js和css文件" class="headerlink" title="3.ayer主题js和css文件"></a>3.ayer主题js和css文件</h3><p>多数的js和css文件引用都在<code>blog\themes\ayer\layout\_partial</code>文件夹下定义，如果切换后有报错，在对应的ejs文件中修改js和css文件路径即可<br>有一个为意外，如果启用了搜索功能，那么搜索需要的search.js和search.xml文件路径被定义在<code>blog\themes\ayer\source\dist\main.js</code>文件中</p>
+<h3 id="4-图片路径出错"><a href="#4-图片路径出错" class="headerlink" title="4.图片路径出错"></a>4.图片路径出错</h3><p>切换为子路径后，原hexo-asset-image无法正确获取路径，需修改插件的index.js。<br>修改后的文件：<a target="_blank" rel="noopener" href="https://github.com/kukusun/hexo-asset-image/blob/5aa4b43a8cde75f103727570d0b45108fa757475/index.js">点击查看文件</a><br>修改后的commit：<a target="_blank" rel="noopener" href="https://github.com/kukusun/hexo-asset-image/commit/5aa4b43a8cde75f103727570d0b45108fa757475">点击查看commit记录</a></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Blog/" rel="tag">Blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Hexo/" rel="tag">Hexo</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+    
+</article>
+
+    
+    <article
   id="post-79-多虚拟终端工具screen"
   class="article article-type-post"
   itemscope
@@ -278,124 +382,6 @@
     <footer class="article-footer">
        
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Linux/" rel="tag">Linux</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
-    <article
-  id="post-75-为Hexo添加警告提示块功能"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/blog/posts/7792baa6.html"
-    >75.为Hexo添加警告提示块功能(有问题，已弃用)</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/blog/posts/7792baa6.html" class="article-date">
-  <time datetime="2023-10-03T05:38:09.000Z" itemprop="datePublished">2023-10-03</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>hexo-admonition的GitHub项目页：<a target="_blank" rel="noopener" href="https://github.com/lxl80/hexo-admonition">点击此处</a></p>
-<p>1.安装hexo-admonition插件</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-admonition --save</span><br></pre></td></tr></table></figure>
-<p>2.修改blog –&gt; themes –&gt; ayer –&gt; source –&gt; css文件夹下的custom.styl，文件最后追加下面的css代码</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line">.admonition &#123;</span><br><span class="line">  margin: 1.5625em 0;</span><br><span class="line">  padding: .6rem;</span><br><span class="line">  overflow: hidden;</span><br><span class="line">  font-size: .64rem;</span><br><span class="line">  page-break-inside: avoid;</span><br><span class="line">  border-left: .3rem solid #42b983;</span><br><span class="line">  border-radius: .3rem;</span><br><span class="line">  box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,.05), 0 0 0.05rem rgba(0,0,0,.1);</span><br><span class="line">  background-color: #fafafa;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">p.admonition-title &#123;</span><br><span class="line">  position: relative;</span><br><span class="line">  margin: -.6rem -.6rem .8em -.6rem !important;</span><br><span class="line">  padding: .4rem .6rem .4rem 2.5rem;</span><br><span class="line">  font-weight: 700;</span><br><span class="line">  background-color:rgba(66, 185, 131, .1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.admonition-title::before &#123;</span><br><span class="line">  position: absolute;</span><br><span class="line">  top: .9rem;</span><br><span class="line">  left: 1rem;</span><br><span class="line">  width: 12px;</span><br><span class="line">  height: 12px;</span><br><span class="line">  background-color: #42b983;</span><br><span class="line">  border-radius: 50%;</span><br><span class="line">  content: &#x27; &#x27;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.info&gt;.admonition-title, .todo&gt;.admonition-title &#123;</span><br><span class="line">  background-color: rgba(0,184,212,.1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.warning&gt;.admonition-title, .attention&gt;.admonition-title, .caution&gt;.admonition-title &#123;</span><br><span class="line">  background-color: rgba(255,145,0,.1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.failure&gt;.admonition-title, .missing&gt;.admonition-title, .fail&gt;.admonition-title, .error&gt;.admonition-title &#123;</span><br><span class="line">  background-color: rgba(255,82,82,.1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.admonition.info, .admonition.todo &#123;</span><br><span class="line">  border-color: #00b8d4;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.admonition.warning, .admonition.attention, .admonition.caution &#123;</span><br><span class="line">  border-color: #ff9100;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.admonition.failure, .admonition.missing, .admonition.fail, .admonition.error &#123;</span><br><span class="line">  border-color: #ff5252;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.info&gt;.admonition-title::before, .todo&gt;.admonition-title::before &#123;</span><br><span class="line">  background-color: #00b8d4;</span><br><span class="line">  border-radius: 50%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.warning&gt;.admonition-title::before, .attention&gt;.admonition-title::before, .caution&gt;.admonition-title::before &#123;</span><br><span class="line">  background-color: #ff9100;</span><br><span class="line">  border-radius: 50%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.failure&gt;.admonition-title::before,.missing&gt;.admonition-title::before,.fail&gt;.admonition-title::before,.error&gt;.admonition-title::before&#123;</span><br><span class="line">  background-color: #ff5252;;</span><br><span class="line">  border-radius: 50%;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.admonition&gt;:last-child &#123;</span><br><span class="line">  margin-bottom: 0 !important;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>配置文件路径参考：<a target="_blank" rel="noopener" href="https://github.com/lxl80/hexo-admonition/issues/1#issuecomment-813065819">点击此处</a></p>
-<p>3.在文章中添加警告提示块<br>每个块都建议前后都留空行，前面留是为了防止块前面的内容影响识别，后面留是表示结束，每个块都以 !!! 开头，然后是代表提示类型的关键字(type)及标题(title)。例如：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">!!! note Hexo-admonition 插件使用示例</span><br><span class="line">    这是基于 hexo-admonition 插件渲染的一条提示信息。类型为 note，并设置了自定义标题。</span><br><span class="line"></span><br><span class="line">    提示内容开头留 4 个空格，可以有多行，最后用空行结束此标记。</span><br></pre></td></tr></table></figure>
-<p>关键字(type)支持如下类型：</p>
-<ul>
-<li>note</li>
-<li>info, todo</li>
-<li>warning, attention, caution</li>
-<li>error, failure, missing, fail</li>
-</ul>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Blog/" rel="tag">Blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Hexo/" rel="tag">Hexo</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
-    <article
-  id="post-74-为Hexo网页启用压缩功能"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/blog/posts/95dd396b.html"
-    >74.为Hexo网页启用压缩功能(意义不大，已弃用)</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/blog/posts/95dd396b.html" class="article-date">
-  <time datetime="2023-10-02T17:37:26.000Z" itemprop="datePublished">2023-10-03</time>
-</a>    
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <p>hexo-neat的GitHub项目页：<a target="_blank" rel="noopener" href="https://github.com/ohroy/hexo-neat">点击此处</a></p>
-<p>1.安装hexo-neat插件</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-neat --save</span><br></pre></td></tr></table></figure>
-<p>2.修改blog文件夹下的_config.yml<br>追加以下内容：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"># hexo-neat</span><br><span class="line">neat_enable: true</span><br><span class="line"># 压缩html</span><br><span class="line">neat_html:</span><br><span class="line">  enable: true</span><br><span class="line">  exclude:</span><br><span class="line"># 压缩css</span><br><span class="line">neat_css:</span><br><span class="line">  enable: true</span><br><span class="line">  exclude:</span><br><span class="line"># 压缩js</span><br><span class="line">neat_js:</span><br><span class="line">  enable: true</span><br><span class="line">  mangle: true</span><br><span class="line">  output:</span><br><span class="line">  compress:</span><br><span class="line">  exclude:</span><br></pre></td></tr></table></figure>
-<p>exclude为要排除压缩的文件<br>mangle为打印日志<br>3.重新生成<br>使用hexo clean清除旧的生成，然后使用hexo g生成新的Hexo博客网页</p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Blog/" rel="tag">Blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Hexo/" rel="tag">Hexo</a></li></ul>
 
     </footer>
   </div>
